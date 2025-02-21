@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2BUyHHq85cE=",
+  "dgSpecHash": "EecERfL5t2s=",
   "success": true,
-  "projectFilePath": "F:\\study\\SIG\\project\\ProjectSig\\armadieti1\\armadieti1\\armadieti1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\study\\SIG\\project\\ProjectSig\\armadieti2\\armadieti2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
   "logs": []
 }

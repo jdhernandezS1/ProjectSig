@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using armadieti1.Models;
+using armadieti2.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace armadieti1.Controllers
+namespace armadieti2.Controllers
 {
     public class HomeController : Controller
     {

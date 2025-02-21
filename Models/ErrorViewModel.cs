@@ -1,4 +1,4 @@
-namespace armadieti1.Models
+namespace armadieti2.Models
 {
     public class ErrorViewModel
     {
