@@ -1,7 +1,10 @@
+using armadieti2.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 
@@ -12,7 +15,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
+// alwaysmigrate to the newst database schema on startup
+var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<AppDbContext>();
 app.UseHttpsRedirection();
 
 // Listen on the PORT environment variable propvided by railway
