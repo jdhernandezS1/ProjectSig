@@ -14,6 +14,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// Listen on the PORT environment variable propvided by railway
+if (builder.Environment.IsProduction() && builder.Configuration.GetValue<int?>("PORT") is not null)
+    builder.WebHost.UseUrls($"https://*:{builder.Configuration.GetValue<int>("PORT")}");
+
 app.UseStaticFiles();
 
 app.UseRouting();
