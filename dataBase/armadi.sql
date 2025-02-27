@@ -46,6 +46,7 @@ CREATE TABLE Utente (
     nome VARCHAR(50) NOT NULL,
     cognome VARCHAR(50) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
+    id_monitor VARCHAR(50) UNIQUE NOT NULL,
     tipo ENUM('Studente', 'Docente', 'Amministrativo') NOT NULL,
     id_dipartimento INT NOT NULL,
     FOREIGN KEY (id_dipartimento) REFERENCES Dipartimento(id_dipartimento)
@@ -53,7 +54,7 @@ CREATE TABLE Utente (
 
 
 CREATE TABLE TipoPagamento (
-	pagamento VARCHAR(30) NOT NULL
+	pagamento VARCHAR(30) PRIMARY KEY
 );
 
 CREATE TABLE Noleggio (
