@@ -1,12 +1,21 @@
-using armadieti2.Data;
+using System.Configuration;
+using armadieti2.Models;
+using Microsoft.EntityFrameworkCore;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContextFactory<AppDbContext>(x => x.UseNpgsql(builder.Configuration["PostgreSQL"]));
 
 var app = builder.Build();
+
+
+var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<AppDbContext>();
+await context.Database.MigrateAsync();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -15,13 +24,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-// alwaysmigrate to the newst database schema on startup
-var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<AppDbContext>();
 app.UseHttpsRedirection();
-
-// Listen on the PORT environment variable propvided by railway
-if (builder.Environment.IsProduction() && builder.Configuration.GetValue<int?>("PORT") is not null)
-    builder.WebHost.UseUrls($"https://*:{builder.Configuration.GetValue<int>("PORT")}");
 
 app.UseStaticFiles();
 

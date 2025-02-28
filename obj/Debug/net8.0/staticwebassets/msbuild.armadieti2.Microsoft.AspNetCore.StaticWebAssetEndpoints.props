@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\armadieti2.ghrcm7icjt.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3HdHc/LdBFCACLo3\u002BOF2qvD9tUCpH4URqqX63h6acHY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1128"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223HdHc/LdBFCACLo3\u002BOF2qvD9tUCpH4URqqX63h6acHY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Feb 2025 16:36:34 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1128"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223HdHc/LdBFCACLo3\u002BOF2qvD9tUCpH4URqqX63h6acHY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 16:17:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/armadieti2/armadieti2.ghrcm7icjt.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\armadieti2.ghrcm7icjt.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ghrcm7icjt"},{"Name":"integrity","Value":"sha256-3HdHc/LdBFCACLo3\u002BOF2qvD9tUCpH4URqqX63h6acHY="},{"Name":"label","Value":"_content/armadieti2/armadieti2.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1128"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223HdHc/LdBFCACLo3\u002BOF2qvD9tUCpH4URqqX63h6acHY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Feb 2025 16:36:34 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1128"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223HdHc/LdBFCACLo3\u002BOF2qvD9tUCpH4URqqX63h6acHY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Feb 2025 16:17:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/armadieti2/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
