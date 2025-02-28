@@ -22,8 +22,7 @@ namespace armadieti2.Models
             // connect to postgres with connection string from app settings
             DotNetEnv.Env.Load();
             var DataBaseVar = Environment.GetEnvironmentVariable("DATABASE");
-                options.UseNpgsql(DataBaseVar);
-            //options.UseNpgsql(Configuration.GetConnectionString("Default"));
+            options.UseNpgsql(DataBaseVar);
         }
 
             public DbSet<Impiegato> Impiegato { get; set; } = default!;

@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContextFactory<AppDbContext>(x => x.UseNpgsql(builder.Configuration["PostgreSQL"]));
+builder.Services.AddDbContextFactory<AppDbContext>(x => x.UseNpgsql(builder.Configuration["DATABASE"]));
 
 var app = builder.Build();
 
