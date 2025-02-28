@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("armadieti2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3caf79882b8407c250bf0d0fcb171b1248a0872b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c16eb5d51a0cbf3de801c78c34022ef2aa64c512")]
 [assembly: System.Reflection.AssemblyProductAttribute("armadieti2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("armadieti2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
