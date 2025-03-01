@@ -1,67 +1,257 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = armadieti2
 build_property.RootNamespace = armadieti2
-build_property.ProjectDir = /workspaces/ProjectSig/
+build_property.ProjectDir = F:\study\SIG\project\ProjectSig\armadieti2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /workspaces/ProjectSig
+build_property.MSBuildProjectDirectory = F:\study\SIG\project\ProjectSig\armadieti2
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[/workspaces/ProjectSig/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Armadi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYWRpXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Armadi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYWRpXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Impiegati/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0NyZWF0ZS5jc2h0bWw=
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Armadi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYWRpXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Impiegati/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0RlbGV0ZS5jc2h0bWw=
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Armadi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYWRpXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Impiegati/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0RldGFpbHMuY3NodG1s
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Armadi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYWRpXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Impiegati/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0VkaXQuY3NodG1s
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/CategoriaArmadi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhQXJtYWRpXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Impiegati/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0luZGV4LmNzaHRtbA==
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/CategoriaArmadi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhQXJtYWRpXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/CategoriaArmadi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhQXJtYWRpXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/CategoriaArmadi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhQXJtYWRpXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/CategoriaArmadi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhQXJtYWRpXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Chiavi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZpXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-jqtqetglij
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Chiavi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Chiavi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Chiavi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Chiavi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Dipartimenti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Dipartimenti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Dipartimenti/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Dipartimenti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Dipartimenti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Noleggi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Noleggi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Noleggi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Noleggi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Noleggi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoArmadi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9Bcm1hZGlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoArmadi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9Bcm1hZGlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoArmadi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9Bcm1hZGlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoArmadi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9Bcm1hZGlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoArmadi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9Bcm1hZGlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoChiavi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9DaGlhdmlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoChiavi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9DaGlhdmlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoChiavi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9DaGlhdmlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoChiavi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9DaGlhdmlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/StatoChiavi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9DaGlhdmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoPagamenti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1BhZ2FtZW50aVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoPagamenti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1BhZ2FtZW50aVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoPagamenti/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1BhZ2FtZW50aVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoPagamenti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1BhZ2FtZW50aVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoPagamenti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1BhZ2FtZW50aVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoUtenti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1V0ZW50aVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoUtenti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1V0ZW50aVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoUtenti/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1V0ZW50aVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoUtenti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1V0ZW50aVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/TipoUtenti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1V0ZW50aVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Utenti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Utenti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Utenti/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Utenti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Utenti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRlbnRpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/study/SIG/project/ProjectSig/armadieti2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0yrl383oae

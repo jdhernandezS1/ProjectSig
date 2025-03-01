@@ -10,22 +10,37 @@ namespace armadieti2.Models
 {
     public class AppDbContext : DbContext
     {
-            protected readonly IConfiguration Configuration;
+        protected readonly IConfiguration Configuration;
 
-            public AppDbContext(IConfiguration configuration)
-            {
-                Configuration = configuration;
-            }
+        public AppDbContext(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
-            protected override void OnConfiguring(DbContextOptionsBuilder options)
-            {
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
             // connect to postgres with connection string from app settings
             DotNetEnv.Env.Load();
             var DataBaseVar = Environment.GetEnvironmentVariable("DATABASE");
             options.UseNpgsql(DataBaseVar);
         }
 
-            public DbSet<Impiegato> Impiegato { get; set; } = default!;
-            //public DbSet<User> Users { get; set; }
+        //ARMADI MODELS
+        public DbSet<CategoriaArmadioModel> CategoriaArmadioModel { get; set; } = default!;
+        public DbSet<ArmadioModel> ArmadioModel { get; set; } = default!;
+        public DbSet<StatoChiaveModel> StatoChiaveModel { get; set; } = default!;
+        public DbSet<ChiaveModel> ChiaveModel { get; set; } = default!;
+        //NOLEGGI MODELS
+        public DbSet<TipoPagamentoModel> TipoPagamentoModel { get; set; } = default!;
+        public DbSet<NoleggioModel> NoleggioModel { get; set; } = default!;
+
+        //Utenti models
+        public DbSet<DipartimentoModel> DipartimentoModel { get; set; } = default!;
+        public DbSet<TipoUtenteModel> TipoUtenteModel { get; set; } = default!;
+
+        public DbSet<TipoUtenteModel> UtenteModel { get; set; } = default!;
+        public DbSet<armadieti2.Models.StatoArmadioModel> StatoArmadioModel { get; set; } = default!;
+        public DbSet<armadieti2.Models.UtenteModel> UtenteModel_1 { get; set; } = default!;
+
     }
 }
