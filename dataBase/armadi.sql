@@ -4,71 +4,75 @@ USE armadieti;
 
 
 CREATE TABLE CategoriaArmadio (
-    id_categoria INT AUTO_INCREMENT PRIMARY KEY,
-    nome ENUM('casella', 'armadietto') UNIQUE NOT NULL
+    CategoriaArmadio VARCHAR(50) PRIMARY KEY
+);
+CREATE TABLE StatoArmadio (
+    StatoArmadio VARCHAR(50) PRIMARY KEY
 );
 
-
 CREATE TABLE Armadio (
-    id_armadio INT AUTO_INCREMENT PRIMARY KEY,
-    piano VARCHAR(50) NOT NULL,
-    numero INT NOT NULL,
-    id_categoria INT NOT NULL,
-    stato ENUM('Disponibile', 'Occupato', 'Manutenzione', 'Fuori uso') UNIQUE NOT NULL,
-    FOREIGN KEY (id_categoria) REFERENCES CategoriaArmadio(id_categoria),
-    UNIQUE (piano, numero)
+    IdArmadio INT AUTO_INCREMENT PRIMARY KEY,
+    Piano VARCHAR(50) NOT NULL,
+    Numero INT NOT NULL,
+    CategoriaArmadio VARCHAR(50) NOT NULL,
+    StatoArmadio VARCHAR(50) NOT NULL,
+    FOREIGN KEY (CategoriaArmadio) REFERENCES CategoriaArmadio(CategoriaArmadio),
+    FOREIGN KEY (StatoArmadio) REFERENCES StatoArmadio(StatoArmadio),
+    UNIQUE (Piano, Numero)
 );
 
 CREATE TABLE StatoChiave (
-    id_stato INT AUTO_INCREMENT PRIMARY KEY,
-    nome ENUM('Disponibile', 'Consegnata', 'Persa', 'Danneggiata') UNIQUE NOT NULL
+    StatoChiave VARCHAR(50) PRIMARY KEY
 );
 
 
 CREATE TABLE Chiave (
-    id_chiave INT AUTO_INCREMENT PRIMARY KEY,
-    id_armadio INT NOT NULL,
-    id_stato INT NOT NULL,
-    FOREIGN KEY (id_armadio) REFERENCES Armadio(id_armadio),
-    FOREIGN KEY (id_stato) REFERENCES StatoChiave(id_stato),
-    UNIQUE (id_armadio, id_stato)
+    IdChiave INT AUTO_INCREMENT PRIMARY KEY,
+    IdArmadio INT NOT NULL,
+    StatoChiave VARCHAR(50) NOT NULL,
+    FOREIGN KEY (IdArmadio) REFERENCES Armadio(IdArmadio),
+    FOREIGN KEY (StatoChiave) REFERENCES StatoChiave(StatoChiave),
+    UNIQUE (IdArmadio, StatoChiave)
 );
 
 
 CREATE TABLE Dipartimento (
-    id_dipartimento INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) UNIQUE NOT NULL
+   NomeDipartimento VARCHAR(50) PRIMARY KEY
+);
+
+CREATE TABLE TipoUtente (
+   TipoUtente VARCHAR(50) PRIMARY KEY
 );
 
 
 CREATE TABLE Utente (
-    id_utente INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
-    cognome VARCHAR(50) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    id_monitor VARCHAR(50) UNIQUE NOT NULL,
-    tipo ENUM('Studente', 'Docente', 'Amministrativo') NOT NULL,
-    id_dipartimento INT NOT NULL,
-    FOREIGN KEY (id_dipartimento) REFERENCES Dipartimento(id_dipartimento)
+    IdUtente INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(50) NOT NULL,
+    Cognome VARCHAR(50) NOT NULL,
+    Email VARCHAR(255) UNIQUE NOT NULL,
+    IdMonitor VARCHAR(50) UNIQUE NOT NULL,
+    TipoUtente EVARCHAR(50) NOT NULL,
+    NomeDipartimento VARCHAR(50) NOT NULL,
+    FOREIGN KEY (NomeDipartimento) REFERENCES Dipartimento(NomeDipartimento)
 );
 
 
 CREATE TABLE TipoPagamento (
-	pagamento VARCHAR(30) PRIMARY KEY
+	Pagamento VARCHAR(30) PRIMARY KEY
 );
 
 CREATE TABLE Noleggio (
-    id_noleggio INT AUTO_INCREMENT PRIMARY KEY,
-    data_inizio DATETIME NOT NULL,
-    data_fine DATETIME NOT NULL,
-	pagamento VARCHAR(30) NOT NULL,
-    cauzione DECIMAL(10,2) NOT NULL DEFAULT 0,
-    id_armadio INT NOT NULL,
-    id_chiave INT NOT NULL,
-    id_utente INT NOT NULL,
-    FOREIGN KEY (pagamento) REFERENCES TipoPagamento(pagamento),
-    FOREIGN KEY (id_armadio) REFERENCES Armadio(id_armadio),
-    FOREIGN KEY (id_chiave) REFERENCES Chiave(id_chiave),
-    FOREIGN KEY (id_utente) REFERENCES Utente(id_utente),
-    UNIQUE (id_armadio, data_inizio, data_fine)
+    IdNoleggio INT AUTO_INCREMENT PRIMARY KEY,
+    DataInizio DATETIME NOT NULL,
+    DataFine DATETIME NOT NULL,
+	Pagamento VARCHAR(30) NOT NULL,
+    Cauzione DECIMAL(10,2) NOT NULL DEFAULT 0,
+    IdArmadio INT NOT NULL,
+    IdChiave INT NOT NULL,
+    IdUtente INT NOT NULL,
+    FOREIGN KEY (Pagamento) REFERENCES TipoPagamento(Pagamento),
+    FOREIGN KEY (IdArmadio) REFERENCES Armadio(IdArmadio),
+    FOREIGN KEY (IdChiave) REFERENCES Chiave(IdChiave),
+    FOREIGN KEY (IdUtente) REFERENCES Utente(IdUtente),
+    UNIQUE (IdArmadio, DataInizio, DataFine)
 );
