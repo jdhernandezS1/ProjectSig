@@ -34,32 +34,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/ProjectSig/Views/Impiegati/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0NyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/workspaces/ProjectSig/Views/Impiegati/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0RlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/workspaces/ProjectSig/Views/Impiegati/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0RldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/workspaces/ProjectSig/Views/Impiegati/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0VkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/workspaces/ProjectSig/Views/Impiegati/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1waWVnYXRpL0luZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/workspaces/ProjectSig/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/workspaces/ProjectSig/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtentes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50ZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtentes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50ZXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtentes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50ZXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtentes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50ZXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtentes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50ZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/workspaces/ProjectSig/Views/_ViewImports.cshtml]
