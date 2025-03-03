@@ -17,9 +17,15 @@ namespace armadieti2.Models
 
         [Required]
         [MaxLength(30)]
+<<<<<<< HEAD
         public required int IdTipoPagamento { get; set; }
 
         [ForeignKey("IdTipoPagamento")]
+=======
+        public required string Pagamento { get; set; }
+
+        [ForeignKey("Pagamento")]
+>>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
         public required TipoPagamentoModel TipoPagamentoModel { get; set; }
 
         [Required]

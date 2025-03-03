@@ -26,6 +26,86 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /workspaces/ProjectSig
 build_property._RazorSourceGeneratorDebug = 
 
+[/workspaces/ProjectSig/Views/Armadi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJtYWRpL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Armadi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJtYWRpL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Armadi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJtYWRpL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Armadi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJtYWRpL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Armadi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJtYWRpL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/CategoriaArmadi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmlhQXJtYWRpL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/CategoriaArmadi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmlhQXJtYWRpL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/CategoriaArmadi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmlhQXJtYWRpL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/CategoriaArmadi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmlhQXJtYWRpL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/CategoriaArmadi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmlhQXJtYWRpL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Chiavi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hpYXZpL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Chiavi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hpYXZpL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Chiavi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hpYXZpL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Chiavi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hpYXZpL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Chiavi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hpYXZpL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Dipartimenti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlwYXJ0aW1lbnRpL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Dipartimenti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlwYXJ0aW1lbnRpL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Dipartimenti/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlwYXJ0aW1lbnRpL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Dipartimenti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlwYXJ0aW1lbnRpL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Dipartimenti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlwYXJ0aW1lbnRpL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/ProjectSig/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,12 +114,92 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspaces/ProjectSig/Views/Noleggi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm9sZWdnaS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Noleggi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm9sZWdnaS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Noleggi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm9sZWdnaS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Noleggi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm9sZWdnaS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Noleggi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm9sZWdnaS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/ProjectSig/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/workspaces/ProjectSig/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoArmadi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9Bcm1hZGkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoArmadi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9Bcm1hZGkvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoArmadi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9Bcm1hZGkvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoArmadi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9Bcm1hZGkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoArmadi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9Bcm1hZGkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoChiavi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9DaGlhdmkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoChiavi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9DaGlhdmkvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoChiavi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9DaGlhdmkvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoChiavi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9DaGlhdmkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/StatoChiavi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdG9DaGlhdmkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoPagamenti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1BhZ2FtZW50aS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoPagamenti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1BhZ2FtZW50aS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoPagamenti/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1BhZ2FtZW50aS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoPagamenti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1BhZ2FtZW50aS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoPagamenti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1BhZ2FtZW50aS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/workspaces/ProjectSig/Views/TipoUtentes/Create.cshtml]
@@ -60,6 +220,46 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/workspaces/ProjectSig/Views/TipoUtentes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50ZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtenti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50aS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtenti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50aS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtenti/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50aS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtenti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50aS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/TipoUtenti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb1V0ZW50aS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Utenti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRlbnRpL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Utenti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRlbnRpL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Utenti/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRlbnRpL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Utenti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRlbnRpL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/ProjectSig/Views/Utenti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRlbnRpL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/workspaces/ProjectSig/Views/_ViewImports.cshtml]

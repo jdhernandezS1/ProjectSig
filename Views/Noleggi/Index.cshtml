@@ -1,0 +1,71 @@
+﻿@model IEnumerable<armadieti2.Models.NoleggioModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInizio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataFine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoPagamentoModel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cauzione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArmadioModel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChiaveModel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UtenteModel)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataInizio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataFine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoPagamentoModel.Pagamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cauzione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArmadioModel.Piano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChiaveModel.IdChiave)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UtenteModel.Cognome)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdNoleggio">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdNoleggio">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdNoleggio">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
