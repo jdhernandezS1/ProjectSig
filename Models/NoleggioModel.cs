@@ -9,43 +9,39 @@ namespace armadieti2.Models
         [Key]
         public int IdNoleggio { get; set; }
 
-        [Required]
-        public DateTime DataInizio { get; private set; } = DateTime.UtcNow;
+        private DateTime _dataInizio;
+        private DateTime _dataFine;
+
+        public DateTime DataInizio
+        {
+            get => _dataInizio;
+            set => _dataInizio = DateTime.SpecifyKind(value, DateTimeKind.Utc);
+        }
 
         [Required]
-        public DateTime DataFine { get; set; }
-
-        [Required]
-        [MaxLength(30)]
-<<<<<<< HEAD
-        public required int IdTipoPagamento { get; set; }
+        public DateTime DataFine
+        {
+            get => _dataFine;
+            set => _dataFine = DateTime.SpecifyKind(value, DateTimeKind.Utc);
+        }
+        public  int IdTipoPagamento { get; set; }
 
         [ForeignKey("IdTipoPagamento")]
-=======
-        public required string Pagamento { get; set; }
+        public TipoPagamentoModel? TipoPagamentoModel { get; set; }
 
-        [ForeignKey("Pagamento")]
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
-        public required TipoPagamentoModel TipoPagamentoModel { get; set; }
+        public required double Cauzione { get; set; }
 
-        [Required]
-        public decimal Cauzione { get; set; }
-
-        public int IdArmadio { get; set; }
+        public required int IdArmadio { get; set; }
         [ForeignKey("IdArmadio")]
-        public required ArmadioModel ArmadioModel { get; set; }
+        public  ArmadioModel? ArmadioModel { get; set; }
 
-        public int IdChiave { get; set; }
+        public required int IdChiave { get; set; }
         [ForeignKey("IdChiave")]
-        public required ChiaveModel ChiaveModel { get; set; }
+        public ChiaveModel? ChiaveModel { get; set; }
 
-        public int IdUtente { get; set; }
+        public required int IdUtente { get; set; }
         [ForeignKey("IdUtente")]
-        public required UtenteModel UtenteModel { get; set; }
+        public UtenteModel? UtenteModel { get; set; }
 
-        public void AggiornaDataInizio()
-        {
-            DataInizio = DateTime.UtcNow;
-        }
     }
 }

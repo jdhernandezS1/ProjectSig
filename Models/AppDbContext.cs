@@ -33,23 +33,12 @@ namespace armadieti2.Models
         //NOLEGGI MODELS
         public DbSet<TipoPagamentoModel> TipoPagamentoModel { get; set; } = default!;
         public DbSet<NoleggioModel> NoleggioModel { get; set; } = default!;
-<<<<<<< HEAD
         //Utenti models
         public DbSet<DipartimentoModel> DipartimentoModel { get; set; } = default!;
         public DbSet<TipoUtenteModel> TipoUtenteModel { get; set; } = default!;
         public DbSet<TipoUtenteModel> UtenteModel { get; set; } = default!;
         public DbSet<StatoArmadioModel> StatoArmadioModel { get; set; } = default!;
         public DbSet<UtenteModel> UtenteModel_1 { get; set; } = default!;
-=======
-
-        //Utenti models
-        public DbSet<DipartimentoModel> DipartimentoModel { get; set; } = default!;
-        public DbSet<TipoUtenteModel> TipoUtenteModel { get; set; } = default!;
-
-        public DbSet<TipoUtenteModel> UtenteModel { get; set; } = default!;
-        public DbSet<armadieti2.Models.StatoArmadioModel> StatoArmadioModel { get; set; } = default!;
-        public DbSet<armadieti2.Models.UtenteModel> UtenteModel_1 { get; set; } = default!;
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
     }
 }

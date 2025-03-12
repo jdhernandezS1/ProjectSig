@@ -30,7 +30,6 @@ namespace armadieti2.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdArmadio"));
 
-<<<<<<< HEAD
                     b.Property<int>("IdCategoria")
                         .HasColumnType("integer");
 
@@ -40,43 +39,21 @@ namespace armadieti2.Migrations
                     b.Property<int>("Numero")
                         .HasColumnType("integer");
 
-=======
-                    b.Property<string>("CategoriaArmadio")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("Numero")
-                        .HasColumnType("integer");
-
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                     b.Property<string>("Piano")
                         .IsRequired()
                         .HasColumnType("text");
 
-<<<<<<< HEAD
                     b.HasKey("IdArmadio");
 
                     b.HasIndex("IdCategoria");
 
                     b.HasIndex("IdStatoArmadio");
-=======
-                    b.Property<string>("StatoArmadio")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("IdArmadio");
-
-                    b.HasIndex("CategoriaArmadio");
-
-                    b.HasIndex("StatoArmadio");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("ArmadioModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.CategoriaArmadioModel", b =>
                 {
-<<<<<<< HEAD
                     b.Property<int>("IdCategoria")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
@@ -88,12 +65,6 @@ namespace armadieti2.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("IdCategoria");
-=======
-                    b.Property<string>("CategoriaArmadio")
-                        .HasColumnType("text");
-
-                    b.HasKey("CategoriaArmadio");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("CategoriaArmadioModel");
                 });
@@ -112,31 +83,20 @@ namespace armadieti2.Migrations
                     b.Property<int>("IdArmadio")
                         .HasColumnType("integer");
 
-<<<<<<< HEAD
                     b.Property<int>("IdStatoChiave")
                         .HasColumnType("integer");
-=======
-                    b.Property<string>("StatoChiave")
-                        .IsRequired()
-                        .HasColumnType("text");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.HasKey("IdChiave");
 
                     b.HasIndex("IdArmadio");
 
-<<<<<<< HEAD
                     b.HasIndex("IdStatoChiave");
-=======
-                    b.HasIndex("StatoChiave");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("ChiaveModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.DipartimentoModel", b =>
                 {
-<<<<<<< HEAD
                     b.Property<int>("IdDipartimento")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
@@ -149,13 +109,6 @@ namespace armadieti2.Migrations
                         .HasColumnType("character varying(50)");
 
                     b.HasKey("IdDipartimento");
-=======
-                    b.Property<string>("NomeDipartimento")
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
-
-                    b.HasKey("NomeDipartimento");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("DipartimentoModel");
                 });
@@ -168,8 +121,8 @@ namespace armadieti2.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdNoleggio"));
 
-                    b.Property<decimal>("Cauzione")
-                        .HasColumnType("numeric");
+                    b.Property<double>("Cauzione")
+                        .HasColumnType("double precision");
 
                     b.Property<DateTime>("DataFine")
                         .HasColumnType("timestamp with time zone");
@@ -183,47 +136,27 @@ namespace armadieti2.Migrations
                     b.Property<int>("IdChiave")
                         .HasColumnType("integer");
 
-<<<<<<< HEAD
                     b.Property<int>("IdTipoPagamento")
-                        .HasMaxLength(30)
                         .HasColumnType("integer");
 
                     b.Property<int>("IdUtente")
                         .HasColumnType("integer");
 
-=======
-                    b.Property<int>("IdUtente")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Pagamento")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("character varying(30)");
-
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                     b.HasKey("IdNoleggio");
 
                     b.HasIndex("IdArmadio");
 
                     b.HasIndex("IdChiave");
 
-<<<<<<< HEAD
                     b.HasIndex("IdTipoPagamento");
 
                     b.HasIndex("IdUtente");
 
-=======
-                    b.HasIndex("IdUtente");
-
-                    b.HasIndex("Pagamento");
-
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                     b.ToTable("NoleggioModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.StatoArmadioModel", b =>
                 {
-<<<<<<< HEAD
                     b.Property<int>("IdStatoArmadio")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
@@ -235,19 +168,12 @@ namespace armadieti2.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("IdStatoArmadio");
-=======
-                    b.Property<string>("StatoArmadio")
-                        .HasColumnType("text");
-
-                    b.HasKey("StatoArmadio");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("StatoArmadioModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.StatoChiaveModel", b =>
                 {
-<<<<<<< HEAD
                     b.Property<int>("IdStatoChiave")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
@@ -259,19 +185,12 @@ namespace armadieti2.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("IdStatoChiave");
-=======
-                    b.Property<string>("StatoChiave")
-                        .HasColumnType("text");
-
-                    b.HasKey("StatoChiave");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("StatoChiaveModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.TipoPagamentoModel", b =>
                 {
-<<<<<<< HEAD
                     b.Property<int>("IdTipoPagamento")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
@@ -284,20 +203,12 @@ namespace armadieti2.Migrations
                         .HasColumnType("character varying(30)");
 
                     b.HasKey("IdTipoPagamento");
-=======
-                    b.Property<string>("Pagamento")
-                        .HasMaxLength(30)
-                        .HasColumnType("character varying(30)");
-
-                    b.HasKey("Pagamento");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("TipoPagamentoModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.TipoUtenteModel", b =>
                 {
-<<<<<<< HEAD
                     b.Property<int>("IdTipoUtente")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
@@ -309,12 +220,6 @@ namespace armadieti2.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("IdTipoUtente");
-=======
-                    b.Property<string>("TipoUtente")
-                        .HasColumnType("text");
-
-                    b.HasKey("TipoUtente");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("TipoUtenteModel");
                 });
@@ -336,49 +241,27 @@ namespace armadieti2.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-<<<<<<< HEAD
                     b.Property<int>("IdDipartimento")
                         .HasColumnType("integer");
 
-=======
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                     b.Property<string>("IdMonitor")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)");
 
-<<<<<<< HEAD
                     b.Property<int>("IdTipoUtente")
                         .HasColumnType("integer");
 
-=======
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)");
 
-<<<<<<< HEAD
                     b.HasKey("IdUtente");
 
                     b.HasIndex("IdDipartimento");
 
                     b.HasIndex("IdTipoUtente");
-=======
-                    b.Property<string>("NomeDipartimento")
-                        .IsRequired()
-                        .HasColumnType("character varying(50)");
-
-                    b.Property<string>("TipoUtente")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("IdUtente");
-
-                    b.HasIndex("NomeDipartimento");
-
-                    b.HasIndex("TipoUtente");
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
 
                     b.ToTable("UtenteModel_1");
                 });
@@ -387,21 +270,13 @@ namespace armadieti2.Migrations
                 {
                     b.HasOne("armadieti2.Models.CategoriaArmadioModel", "CategoriaArmadioModel")
                         .WithMany()
-<<<<<<< HEAD
                         .HasForeignKey("IdCategoria")
-=======
-                        .HasForeignKey("CategoriaArmadio")
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("armadieti2.Models.StatoArmadioModel", "StatoArmadioModel")
                         .WithMany()
-<<<<<<< HEAD
                         .HasForeignKey("IdStatoArmadio")
-=======
-                        .HasForeignKey("StatoArmadio")
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -420,11 +295,7 @@ namespace armadieti2.Migrations
 
                     b.HasOne("armadieti2.Models.StatoChiaveModel", "StatoChiaveModel")
                         .WithMany()
-<<<<<<< HEAD
                         .HasForeignKey("IdStatoChiave")
-=======
-                        .HasForeignKey("StatoChiave")
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -447,30 +318,18 @@ namespace armadieti2.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-<<<<<<< HEAD
                     b.HasOne("armadieti2.Models.TipoPagamentoModel", "TipoPagamentoModel")
                         .WithMany()
                         .HasForeignKey("IdTipoPagamento")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-=======
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                     b.HasOne("armadieti2.Models.UtenteModel", "UtenteModel")
                         .WithMany()
                         .HasForeignKey("IdUtente")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-<<<<<<< HEAD
-=======
-                    b.HasOne("armadieti2.Models.TipoPagamentoModel", "TipoPagamentoModel")
-                        .WithMany()
-                        .HasForeignKey("Pagamento")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                     b.Navigation("ArmadioModel");
 
                     b.Navigation("ChiaveModel");
@@ -484,21 +343,13 @@ namespace armadieti2.Migrations
                 {
                     b.HasOne("armadieti2.Models.DipartimentoModel", "DipartimentoModel")
                         .WithMany()
-<<<<<<< HEAD
                         .HasForeignKey("IdDipartimento")
-=======
-                        .HasForeignKey("NomeDipartimento")
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("armadieti2.Models.TipoUtenteModel", "TipoUtenteModel")
                         .WithMany()
-<<<<<<< HEAD
                         .HasForeignKey("IdTipoUtente")
-=======
-                        .HasForeignKey("TipoUtente")
->>>>>>> fae79dd8d590fb61295b7371cc064b6c93044b72
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

@@ -1,0 +1,44 @@
+﻿@model armadieti2.Models.ChiaveModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ChiaveModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdChiave" />
+            <div class="form-group">
+                <label asp-for="IdArmadio" class="control-label"></label>
+                <select asp-for="IdArmadio" class="form-control" asp-items="ViewBag.IdArmadio"></select>
+                <span asp-validation-for="IdArmadio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdStatoChiave" class="control-label"></label>
+                <select asp-for="IdStatoChiave" class="form-control" asp-items="ViewBag.IdStatoChiave"></select>
+                <span asp-validation-for="IdStatoChiave" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataModifica" class="control-label"></label>
+                <input asp-for="DataModifica" class="form-control" />
+                <span asp-validation-for="DataModifica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
