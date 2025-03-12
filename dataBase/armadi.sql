@@ -9,16 +9,22 @@ CREATE TABLE CategoriaArmadio (
 CREATE TABLE StatoArmadio (
     StatoArmadio VARCHAR(50) PRIMARY KEY
 );
-
+CREATE TABLE Location(
+	IdLocation INT AUTO_INCREMENT PRIMARY KEY,
+	Stabile VARCHAR(50) NOT NULL,
+    Piano VARCHAR(50) NOT NULL,
+    UNIQUE(Stabile,Piano)
+);
 CREATE TABLE Armadio (
     IdArmadio INT AUTO_INCREMENT PRIMARY KEY,
-    Piano VARCHAR(50) NOT NULL,
     Numero INT NOT NULL,
+    IdLocation INT NOT NULL,
     CategoriaArmadio VARCHAR(50) NOT NULL,
     StatoArmadio VARCHAR(50) NOT NULL,
     FOREIGN KEY (CategoriaArmadio) REFERENCES CategoriaArmadio(CategoriaArmadio),
+    FOREIGN KEY (IdLocation) REFERENCES Location(IdLocation),
     FOREIGN KEY (StatoArmadio) REFERENCES StatoArmadio(StatoArmadio),
-    UNIQUE (Piano, Numero)
+    UNIQUE (IdLocation, Numero)
 );
 
 CREATE TABLE StatoChiave (
@@ -30,9 +36,8 @@ CREATE TABLE Chiave (
     IdChiave INT AUTO_INCREMENT PRIMARY KEY,
     IdArmadio INT NOT NULL,
     StatoChiave VARCHAR(50) NOT NULL,
-    FOREIGN KEY (IdArmadio) REFERENCES Armadio(IdArmadio),
     FOREIGN KEY (StatoChiave) REFERENCES StatoChiave(StatoChiave),
-    UNIQUE (IdArmadio, StatoChiave)
+    UNIQUE (StatoChiave)
 );
 
 
@@ -51,9 +56,10 @@ CREATE TABLE Utente (
     Cognome VARCHAR(50) NOT NULL,
     Email VARCHAR(255) UNIQUE NOT NULL,
     IdMonitor VARCHAR(50) UNIQUE NOT NULL,
-    TipoUtente EVARCHAR(50) NOT NULL,
+    TipoUtente VARCHAR(50) NOT NULL,
     NomeDipartimento VARCHAR(50) NOT NULL,
-    FOREIGN KEY (NomeDipartimento) REFERENCES Dipartimento(NomeDipartimento)
+    FOREIGN KEY (TipoUtente) REFERENCES TipoUtente(TipoUtente),
+   	FOREIGN KEY (NomeDipartimento) REFERENCES Dipartimento(NomeDipartimento)
 );
 
 
