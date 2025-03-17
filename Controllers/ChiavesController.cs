@@ -48,7 +48,7 @@ namespace armadieti2.Controllers
         // GET: Chiaves/Create
         public IActionResult Create()
         {
-            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "Piano");
+            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio");
             ViewData["IdStatoChiave"] = new SelectList(_context.StatoChiaveModel, "IdStatoChiave", "StatoChiave");
             return View();
         }
@@ -66,7 +66,7 @@ namespace armadieti2.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "Piano", chiaveModel.IdArmadio);
+            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", chiaveModel.IdArmadio);
             ViewData["IdStatoChiave"] = new SelectList(_context.StatoChiaveModel, "IdStatoChiave", "StatoChiave", chiaveModel.IdStatoChiave);
             return View(chiaveModel);
         }
@@ -84,7 +84,7 @@ namespace armadieti2.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "Piano", chiaveModel.IdArmadio);
+            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", chiaveModel.IdArmadio);
             ViewData["IdStatoChiave"] = new SelectList(_context.StatoChiaveModel, "IdStatoChiave", "StatoChiave", chiaveModel.IdStatoChiave);
             return View(chiaveModel);
         }
@@ -121,7 +121,7 @@ namespace armadieti2.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "Piano", chiaveModel.IdArmadio);
+            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", chiaveModel.IdArmadio);
             ViewData["IdStatoChiave"] = new SelectList(_context.StatoChiaveModel, "IdStatoChiave", "StatoChiave", chiaveModel.IdStatoChiave);
             return View(chiaveModel);
         }

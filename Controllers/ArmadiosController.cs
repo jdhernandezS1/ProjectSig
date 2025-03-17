@@ -21,7 +21,7 @@ namespace armadieti2.Controllers
         // GET: Armadios
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.ArmadioModel.Include(a => a.CategoriaArmadioModel).Include(a => a.StatoArmadioModel);
+            var appDbContext = _context.ArmadioModel.Include(a => a.CategoriaArmadioModel).Include(a => a.LocationModel).Include(a => a.StatoArmadioModel);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -35,6 +35,7 @@ namespace armadieti2.Controllers
 
             var armadioModel = await _context.ArmadioModel
                 .Include(a => a.CategoriaArmadioModel)
+                .Include(a => a.LocationModel)
                 .Include(a => a.StatoArmadioModel)
                 .FirstOrDefaultAsync(m => m.IdArmadio == id);
             if (armadioModel == null)
@@ -49,6 +50,7 @@ namespace armadieti2.Controllers
         public IActionResult Create()
         {
             ViewData["IdCategoria"] = new SelectList(_context.CategoriaArmadioModel, "IdCategoria", "CategoriaArmadio");
+            ViewData["IdLocation"] = new SelectList(_context.LocationModel, "IdLocation", "Stabile");
             ViewData["IdStatoArmadio"] = new SelectList(_context.StatoArmadioModel, "IdStatoArmadio", "StatoArmadio");
             return View();
         }
@@ -58,7 +60,7 @@ namespace armadieti2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdArmadio,Piano,Numero,IdStatoArmadio,IdCategoria")] ArmadioModel armadioModel)
+        public async Task<IActionResult> Create([Bind("IdArmadio,IdLocation,Numero,IdStatoArmadio,IdCategoria")] ArmadioModel armadioModel)
         {
             if (ModelState.IsValid)
             {
@@ -67,6 +69,7 @@ namespace armadieti2.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdCategoria"] = new SelectList(_context.CategoriaArmadioModel, "IdCategoria", "CategoriaArmadio", armadioModel.IdCategoria);
+            ViewData["IdLocation"] = new SelectList(_context.LocationModel, "IdLocation", "Stabile", armadioModel.IdLocation);
             ViewData["IdStatoArmadio"] = new SelectList(_context.StatoArmadioModel, "IdStatoArmadio", "StatoArmadio", armadioModel.IdStatoArmadio);
             return View(armadioModel);
         }
@@ -85,6 +88,7 @@ namespace armadieti2.Controllers
                 return NotFound();
             }
             ViewData["IdCategoria"] = new SelectList(_context.CategoriaArmadioModel, "IdCategoria", "CategoriaArmadio", armadioModel.IdCategoria);
+            ViewData["IdLocation"] = new SelectList(_context.LocationModel, "IdLocation", "Stabile", armadioModel.IdLocation);
             ViewData["IdStatoArmadio"] = new SelectList(_context.StatoArmadioModel, "IdStatoArmadio", "StatoArmadio", armadioModel.IdStatoArmadio);
             return View(armadioModel);
         }
@@ -94,7 +98,7 @@ namespace armadieti2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdArmadio,Piano,Numero,IdStatoArmadio,IdCategoria")] ArmadioModel armadioModel)
+        public async Task<IActionResult> Edit(int id, [Bind("IdArmadio,IdLocation,Numero,IdStatoArmadio,IdCategoria")] ArmadioModel armadioModel)
         {
             if (id != armadioModel.IdArmadio)
             {
@@ -122,6 +126,7 @@ namespace armadieti2.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdCategoria"] = new SelectList(_context.CategoriaArmadioModel, "IdCategoria", "CategoriaArmadio", armadioModel.IdCategoria);
+            ViewData["IdLocation"] = new SelectList(_context.LocationModel, "IdLocation", "Stabile", armadioModel.IdLocation);
             ViewData["IdStatoArmadio"] = new SelectList(_context.StatoArmadioModel, "IdStatoArmadio", "StatoArmadio", armadioModel.IdStatoArmadio);
             return View(armadioModel);
         }
@@ -136,6 +141,7 @@ namespace armadieti2.Controllers
 
             var armadioModel = await _context.ArmadioModel
                 .Include(a => a.CategoriaArmadioModel)
+                .Include(a => a.LocationModel)
                 .Include(a => a.StatoArmadioModel)
                 .FirstOrDefaultAsync(m => m.IdArmadio == id);
             if (armadioModel == null)

@@ -12,8 +12,11 @@ namespace armadieti2.Models
         public int IdArmadio { get; set; }
 
         [Required]
-        public required string Piano { get; set; }
+        public required int IdLocation { get; set; }
+        [ForeignKey("IdLocation")]
+        public LocationModel? LocationModel { get; set; }
 
+        
         [Required]
         public int Numero { get; set; }
 

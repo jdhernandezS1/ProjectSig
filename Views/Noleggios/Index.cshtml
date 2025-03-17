@@ -4,11 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Noleggi Aperti</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <a asp-action="Create">Nuovo Noleggio</a>
+</p> 
 <table class="table">
     <thead>
         <tr>
@@ -19,19 +19,19 @@
                 @Html.DisplayNameFor(model => model.DataFine)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TipoPagamentoModel)
+                Tipo di Pagamento
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Cauzione)
+               Cauzione
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ArmadioModel)
+                Armadio
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ChiaveModel)
+                STATO CHIAVE
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UtenteModel)
+                Utente
             </th>
             <th></th>
         </tr>
@@ -52,18 +52,19 @@
                 @Html.DisplayFor(modelItem => item.Cauzione)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ArmadioModel.Piano)
+                @Html.DisplayFor(modelItem => item.ArmadioModel.IdArmadio)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ChiaveModel.IdChiave)
+                @Html.DisplayFor(modelItem => item.ChiaveModel.StatoChiaveModel.StatoChiave)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UtenteModel.Cognome)
+                @Html.DisplayFor(modelItem => item.UtenteModel.Cognome )
+                @Html.DisplayFor(modelItem => item.UtenteModel.Nome)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdNoleggio">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdNoleggio">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdNoleggio">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdNoleggio">Modiffica</a> |
+                <a asp-action="Details" asp-route-id="@item.IdNoleggio">Detagli</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdNoleggio">Cancellare</a>
             </td>
         </tr>
 }

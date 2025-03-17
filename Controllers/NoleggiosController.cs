@@ -21,7 +21,7 @@ namespace armadieti2.Controllers
         // GET: Noleggios
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.NoleggioModel.Include(n => n.ArmadioModel).Include(n => n.ChiaveModel).Include(n => n.TipoPagamentoModel).Include(n => n.UtenteModel);
+            var appDbContext = _context.NoleggioModel.Include(n => n.ArmadioModel).Include(n => n.ChiaveModel).Include(n => n.TipoPagamentoModel).Include(n => n.UtenteModel).Include(n => n.ChiaveModel).ThenInclude(c => c.StatoChiaveModel);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -50,7 +50,7 @@ namespace armadieti2.Controllers
         // GET: Noleggios/Create
         public IActionResult Create()
         {
-            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "Piano");
+            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio");
             ViewData["IdChiave"] = new SelectList(_context.ChiaveModel, "IdChiave", "IdChiave");
             ViewData["IdTipoPagamento"] = new SelectList(_context.TipoPagamentoModel, "IdTipoPagamento", "Pagamento");
             ViewData["IdUtente"] = new SelectList(_context.UtenteModel_1, "IdUtente", "Cognome");
@@ -70,7 +70,7 @@ namespace armadieti2.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "Piano", noleggioModel.IdArmadio);
+            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", noleggioModel.IdArmadio);
             ViewData["IdChiave"] = new SelectList(_context.ChiaveModel, "IdChiave", "IdChiave", noleggioModel.IdChiave);
             ViewData["IdTipoPagamento"] = new SelectList(_context.TipoPagamentoModel, "IdTipoPagamento", "Pagamento", noleggioModel.IdTipoPagamento);
             ViewData["IdUtente"] = new SelectList(_context.UtenteModel_1, "IdUtente", "Cognome", noleggioModel.IdUtente);
@@ -90,7 +90,7 @@ namespace armadieti2.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "Piano", noleggioModel.IdArmadio);
+            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", noleggioModel.IdArmadio);
             ViewData["IdChiave"] = new SelectList(_context.ChiaveModel, "IdChiave", "IdChiave", noleggioModel.IdChiave);
             ViewData["IdTipoPagamento"] = new SelectList(_context.TipoPagamentoModel, "IdTipoPagamento", "Pagamento", noleggioModel.IdTipoPagamento);
             ViewData["IdUtente"] = new SelectList(_context.UtenteModel_1, "IdUtente", "Cognome", noleggioModel.IdUtente);
@@ -129,7 +129,7 @@ namespace armadieti2.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "Piano", noleggioModel.IdArmadio);
+            ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", noleggioModel.IdArmadio);
             ViewData["IdChiave"] = new SelectList(_context.ChiaveModel, "IdChiave", "IdChiave", noleggioModel.IdChiave);
             ViewData["IdTipoPagamento"] = new SelectList(_context.TipoPagamentoModel, "IdTipoPagamento", "Pagamento", noleggioModel.IdTipoPagamento);
             ViewData["IdUtente"] = new SelectList(_context.UtenteModel_1, "IdUtente", "Cognome", noleggioModel.IdUtente);

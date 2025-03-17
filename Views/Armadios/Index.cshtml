@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Piano)
+                @Html.DisplayNameFor(model => model.LocationModel)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Numero)
@@ -31,7 +31,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Piano)
+                @Html.DisplayFor(modelItem => item.LocationModel.Stabile)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Numero)

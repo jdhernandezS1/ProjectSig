@@ -33,19 +33,20 @@ namespace armadieti2.Migrations
                     b.Property<int>("IdCategoria")
                         .HasColumnType("integer");
 
+                    b.Property<int>("IdLocation")
+                        .HasColumnType("integer");
+
                     b.Property<int>("IdStatoArmadio")
                         .HasColumnType("integer");
 
                     b.Property<int>("Numero")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Piano")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.HasKey("IdArmadio");
 
                     b.HasIndex("IdCategoria");
+
+                    b.HasIndex("IdLocation");
 
                     b.HasIndex("IdStatoArmadio");
 
@@ -111,6 +112,26 @@ namespace armadieti2.Migrations
                     b.HasKey("IdDipartimento");
 
                     b.ToTable("DipartimentoModel");
+                });
+
+            modelBuilder.Entity("armadieti2.Models.LocationModel", b =>
+                {
+                    b.Property<int>("IdLocation")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdLocation"));
+
+                    b.Property<int>("Piano")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Stabile")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("IdLocation");
+
+                    b.ToTable("LocationModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.NoleggioModel", b =>
@@ -274,6 +295,12 @@ namespace armadieti2.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("armadieti2.Models.LocationModel", "LocationModel")
+                        .WithMany()
+                        .HasForeignKey("IdLocation")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("armadieti2.Models.StatoArmadioModel", "StatoArmadioModel")
                         .WithMany()
                         .HasForeignKey("IdStatoArmadio")
@@ -281,6 +308,8 @@ namespace armadieti2.Migrations
                         .IsRequired();
 
                     b.Navigation("CategoriaArmadioModel");
+
+                    b.Navigation("LocationModel");
 
                     b.Navigation("StatoArmadioModel");
                 });

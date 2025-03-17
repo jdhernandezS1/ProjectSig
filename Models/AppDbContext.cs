@@ -39,6 +39,7 @@ namespace armadieti2.Models
         public DbSet<TipoUtenteModel> UtenteModel { get; set; } = default!;
         public DbSet<StatoArmadioModel> StatoArmadioModel { get; set; } = default!;
         public DbSet<UtenteModel> UtenteModel_1 { get; set; } = default!;
+        public DbSet<armadieti2.Models.LocationModel> LocationModel { get; set; } = default!;
 
     }
 }
