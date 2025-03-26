@@ -28,8 +28,6 @@ namespace armadieti2.Models
         //ARMADI MODELS
         public DbSet<CategoriaArmadioModel> CategoriaArmadioModel { get; set; } = default!;
         public DbSet<ArmadioModel> ArmadioModel { get; set; } = default!;
-        public DbSet<StatoChiaveModel> StatoChiaveModel { get; set; } = default!;
-        public DbSet<ChiaveModel> ChiaveModel { get; set; } = default!;
         //NOLEGGI MODELS
         public DbSet<TipoPagamentoModel> TipoPagamentoModel { get; set; } = default!;
         public DbSet<NoleggioModel> NoleggioModel { get; set; } = default!;

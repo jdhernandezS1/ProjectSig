@@ -60,7 +60,7 @@ namespace armadieti2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdArmadio,IdLocation,Numero,IdStatoArmadio,IdCategoria")] ArmadioModel armadioModel)
+        public async Task<IActionResult> Create([Bind("IdArmadio,IdLocation,Numero,StatoChiave,IdStatoArmadio,IdCategoria")] ArmadioModel armadioModel)
         {
             if (ModelState.IsValid)
             {
@@ -98,7 +98,7 @@ namespace armadieti2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdArmadio,IdLocation,Numero,IdStatoArmadio,IdCategoria")] ArmadioModel armadioModel)
+        public async Task<IActionResult> Edit(int id, [Bind("IdArmadio,IdLocation,Numero,StatoChiave,IdStatoArmadio,IdCategoria")] ArmadioModel armadioModel)
         {
             if (id != armadioModel.IdArmadio)
             {

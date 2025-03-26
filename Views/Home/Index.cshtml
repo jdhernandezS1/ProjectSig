@@ -1,8 +1,29 @@
-﻿@{
+﻿@model IEnumerable<armadieti2.Models.ArmadioModel>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationModel.Stabile)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+        @foreach (var item in Model)
+        {
+                <td>                    
+                        <a asp-controller="noleggios" asp-action="Create">
+                            @Html.DisplayFor(modelItem => item.Numero)
+                            @Html.DisplayFor(modelItem => item.LocationModel.Stabile)
+                            </a>
+                    @if (item.StatoChiave) { }
+                </td>                
+        }
+            </tr>
+    </tbody>
+</table>

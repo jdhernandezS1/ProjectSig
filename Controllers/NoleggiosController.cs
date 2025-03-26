@@ -21,7 +21,7 @@ namespace armadieti2.Controllers
         // GET: Noleggios
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.NoleggioModel.Include(n => n.ArmadioModel).Include(n => n.ChiaveModel).Include(n => n.TipoPagamentoModel).Include(n => n.UtenteModel).Include(n => n.ChiaveModel).ThenInclude(c => c.StatoChiaveModel);
+            var appDbContext = _context.NoleggioModel.Include(n => n.ArmadioModel).Include(n => n.TipoPagamentoModel).Include(n => n.UtenteModel);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -35,7 +35,6 @@ namespace armadieti2.Controllers
 
             var noleggioModel = await _context.NoleggioModel
                 .Include(n => n.ArmadioModel)
-                .Include(n => n.ChiaveModel)
                 .Include(n => n.TipoPagamentoModel)
                 .Include(n => n.UtenteModel)
                 .FirstOrDefaultAsync(m => m.IdNoleggio == id);
@@ -51,7 +50,7 @@ namespace armadieti2.Controllers
         public IActionResult Create()
         {
             ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio");
-            ViewData["IdChiave"] = new SelectList(_context.ChiaveModel, "IdChiave", "IdChiave");
+            ViewData["Numero"] = new SelectList(_context.ArmadioModel, "Numero");
             ViewData["IdTipoPagamento"] = new SelectList(_context.TipoPagamentoModel, "IdTipoPagamento", "Pagamento");
             ViewData["IdUtente"] = new SelectList(_context.UtenteModel_1, "IdUtente", "Cognome");
             return View();
@@ -62,7 +61,7 @@ namespace armadieti2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdNoleggio,DataInizio,DataFine,IdTipoPagamento,Cauzione,IdArmadio,IdChiave,IdUtente")] NoleggioModel noleggioModel)
+        public async Task<IActionResult> Create([Bind("IdNoleggio,DataInizio,DataFine,IdTipoPagamento,Cauzione,IdArmadio,IdUtente")] NoleggioModel noleggioModel)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +70,6 @@ namespace armadieti2.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", noleggioModel.IdArmadio);
-            ViewData["IdChiave"] = new SelectList(_context.ChiaveModel, "IdChiave", "IdChiave", noleggioModel.IdChiave);
             ViewData["IdTipoPagamento"] = new SelectList(_context.TipoPagamentoModel, "IdTipoPagamento", "Pagamento", noleggioModel.IdTipoPagamento);
             ViewData["IdUtente"] = new SelectList(_context.UtenteModel_1, "IdUtente", "Cognome", noleggioModel.IdUtente);
             return View(noleggioModel);
@@ -91,7 +89,6 @@ namespace armadieti2.Controllers
                 return NotFound();
             }
             ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", noleggioModel.IdArmadio);
-            ViewData["IdChiave"] = new SelectList(_context.ChiaveModel, "IdChiave", "IdChiave", noleggioModel.IdChiave);
             ViewData["IdTipoPagamento"] = new SelectList(_context.TipoPagamentoModel, "IdTipoPagamento", "Pagamento", noleggioModel.IdTipoPagamento);
             ViewData["IdUtente"] = new SelectList(_context.UtenteModel_1, "IdUtente", "Cognome", noleggioModel.IdUtente);
             return View(noleggioModel);
@@ -102,7 +99,7 @@ namespace armadieti2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdNoleggio,DataInizio,DataFine,IdTipoPagamento,Cauzione,IdArmadio,IdChiave,IdUtente")] NoleggioModel noleggioModel)
+        public async Task<IActionResult> Edit(int id, [Bind("IdNoleggio,DataInizio,DataFine,IdTipoPagamento,Cauzione,IdArmadio,IdUtente")] NoleggioModel noleggioModel)
         {
             if (id != noleggioModel.IdNoleggio)
             {
@@ -130,7 +127,6 @@ namespace armadieti2.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdArmadio"] = new SelectList(_context.ArmadioModel, "IdArmadio", "IdArmadio", noleggioModel.IdArmadio);
-            ViewData["IdChiave"] = new SelectList(_context.ChiaveModel, "IdChiave", "IdChiave", noleggioModel.IdChiave);
             ViewData["IdTipoPagamento"] = new SelectList(_context.TipoPagamentoModel, "IdTipoPagamento", "Pagamento", noleggioModel.IdTipoPagamento);
             ViewData["IdUtente"] = new SelectList(_context.UtenteModel_1, "IdUtente", "Cognome", noleggioModel.IdUtente);
             return View(noleggioModel);
@@ -146,7 +142,6 @@ namespace armadieti2.Controllers
 
             var noleggioModel = await _context.NoleggioModel
                 .Include(n => n.ArmadioModel)
-                .Include(n => n.ChiaveModel)
                 .Include(n => n.TipoPagamentoModel)
                 .Include(n => n.UtenteModel)
                 .FirstOrDefaultAsync(m => m.IdNoleggio == id);

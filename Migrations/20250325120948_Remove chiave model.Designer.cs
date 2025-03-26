@@ -12,8 +12,8 @@ using armadieti2.Models;
 namespace armadieti2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250317142104_bad name of armadios id")]
-    partial class badnameofarmadiosid
+    [Migration("20250325120948_Remove chiave model")]
+    partial class Removechiavemodel
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,6 +45,9 @@ namespace armadieti2.Migrations
                     b.Property<int>("Numero")
                         .HasColumnType("integer");
 
+                    b.Property<bool>("StatoChiave")
+                        .HasColumnType("boolean");
+
                     b.HasKey("IdArmadio");
 
                     b.HasIndex("IdCategoria");
@@ -71,32 +74,6 @@ namespace armadieti2.Migrations
                     b.HasKey("IdCategoria");
 
                     b.ToTable("CategoriaArmadioModel");
-                });
-
-            modelBuilder.Entity("armadieti2.Models.ChiaveModel", b =>
-                {
-                    b.Property<int>("IdChiave")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdChiave"));
-
-                    b.Property<DateTime>("DataModifica")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("IdArmadio")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdStatoChiave")
-                        .HasColumnType("integer");
-
-                    b.HasKey("IdChiave");
-
-                    b.HasIndex("IdArmadio");
-
-                    b.HasIndex("IdStatoChiave");
-
-                    b.ToTable("ChiaveModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.DipartimentoModel", b =>
@@ -157,9 +134,6 @@ namespace armadieti2.Migrations
                     b.Property<int>("IdArmadio")
                         .HasColumnType("integer");
 
-                    b.Property<int>("IdChiave")
-                        .HasColumnType("integer");
-
                     b.Property<int>("IdTipoPagamento")
                         .HasColumnType("integer");
 
@@ -169,8 +143,6 @@ namespace armadieti2.Migrations
                     b.HasKey("IdNoleggio");
 
                     b.HasIndex("IdArmadio");
-
-                    b.HasIndex("IdChiave");
 
                     b.HasIndex("IdTipoPagamento");
 
@@ -194,23 +166,6 @@ namespace armadieti2.Migrations
                     b.HasKey("IdStatoArmadio");
 
                     b.ToTable("StatoArmadioModel");
-                });
-
-            modelBuilder.Entity("armadieti2.Models.StatoChiaveModel", b =>
-                {
-                    b.Property<int>("IdStatoChiave")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdStatoChiave"));
-
-                    b.Property<string>("StatoChiave")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("IdStatoChiave");
-
-                    b.ToTable("StatoChiaveModel");
                 });
 
             modelBuilder.Entity("armadieti2.Models.TipoPagamentoModel", b =>
@@ -317,36 +272,11 @@ namespace armadieti2.Migrations
                     b.Navigation("StatoArmadioModel");
                 });
 
-            modelBuilder.Entity("armadieti2.Models.ChiaveModel", b =>
-                {
-                    b.HasOne("armadieti2.Models.ArmadioModel", "ArmadioModel")
-                        .WithMany()
-                        .HasForeignKey("IdArmadio")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("armadieti2.Models.StatoChiaveModel", "StatoChiaveModel")
-                        .WithMany()
-                        .HasForeignKey("IdStatoChiave")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ArmadioModel");
-
-                    b.Navigation("StatoChiaveModel");
-                });
-
             modelBuilder.Entity("armadieti2.Models.NoleggioModel", b =>
                 {
                     b.HasOne("armadieti2.Models.ArmadioModel", "ArmadioModel")
                         .WithMany()
                         .HasForeignKey("IdArmadio")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("armadieti2.Models.ChiaveModel", "ChiaveModel")
-                        .WithMany()
-                        .HasForeignKey("IdChiave")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -363,8 +293,6 @@ namespace armadieti2.Migrations
                         .IsRequired();
 
                     b.Navigation("ArmadioModel");
-
-                    b.Navigation("ChiaveModel");
 
                     b.Navigation("TipoPagamentoModel");
 

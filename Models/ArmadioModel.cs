@@ -19,6 +19,7 @@ namespace armadieti2.Models
         
         [Required]
         public int Numero { get; set; }
+        public required bool StatoChiave { get; set; }
 
         [Required]
         public required int IdStatoArmadio { get; set; }

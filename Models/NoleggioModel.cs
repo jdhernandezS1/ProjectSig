@@ -35,10 +35,6 @@ namespace armadieti2.Models
         [ForeignKey("IdArmadio")]
         public  ArmadioModel? ArmadioModel { get; set; }
 
-        public required int IdChiave { get; set; }
-        [ForeignKey("IdChiave")]
-        public ChiaveModel? ChiaveModel { get; set; }
-
         public required int IdUtente { get; set; }
         [ForeignKey("IdUtente")]
         public UtenteModel? UtenteModel { get; set; }
