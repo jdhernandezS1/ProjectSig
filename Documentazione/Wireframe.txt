@@ -1,0 +1,12 @@
+Wireframe
+
+- Pagina autenticazione
+	Mail / Password / Bottone accedi / Password dimenticata
+- Panoramica armadietti
+	Disposizione armadietti
+- Registrazione Noleggio
+	Id Noleggio / Nome Utente / Numero Armadietto / Data Inizio
+	Data Fine / Cauzione / Metodo pagamento
+- Registrazione utente
+	Id_GAgi / Id_Utente / Nome / Cognome / Email / Dipartimento /
+- Gestione Finanziaria

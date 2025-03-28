@@ -1,0 +1,51 @@
+REQUISITI
+
+Requisiti Funzionali
+Requisiti Utente
+
+Template Log in
+- segnalare problema
+- accedere accreditandosi
+- recupero password (link via mail)
+- visualizzare
+Home
+- Visualizzare dashboard
+- Selezionare stabile
+- Visionare stato armadietti in base a stabile e piano
+Registrazione Utente
+- Visionare scheda registrazione
+- Possibilità compilare campi
+- Importazione dati tramite Id_Gagi
+Registrazione Noleggio
+- Compilazione scheda noleggio
+- Convalida pagamento cauzione
+- Selezione armadietto
+- Assegnazione chiave
+
+Requisiti Non Funzionali
+
+Performance
+- caricamento pagine deve essere rapido usabilità
+- interfaccia semplice ed intuitiva
+Sicurezza
+- password forti e autenticazione 2FA
+- limitare utenti che possono accedere
+- anonimizzazione dati, criptografia dati
+- backup dati regolare
+manutenzione
+- manutenzione facile, fornita documentazione dettagliata 
+affidabilità
+- garantita continuità del sistema (guasti e risp)
+compatibilità
+- garantire ottima compatibilità con monitor
+(migrazione dati continua da altro sito su medesimo server)
+
+(utilizzo protocollo https/ssl, criptaggio comunicazioni,hosting sicuro,
+CDN,criptaggio DNS,files server divisi da Database (SoD)(PCI DSS), firewall (WFA - Web Application Firewall), SW firmware plugin e temi aggiornati regolarmente)
+
+
+
+Requisiti di sistema
+Criptaggio dati - criptaggio dati sensibili per sicureyya
+gestione molteplici transayioni mantenendo integrità dati
+
