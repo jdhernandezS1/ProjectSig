@@ -2,12 +2,11 @@ DROP DATABASE IF EXISTS armadieti;
 CREATE DATABASE armadieti;
 USE armadieti;
 
-
-CREATE TABLE CategoriaArmadio (
-    CategoriaArmadio VARCHAR(50) PRIMARY KEY
+CREATE TABLE TipoMobilio (
+    TipoMobilio VARCHAR(50) PRIMARY KEY
 );
-CREATE TABLE StatoArmadio (
-    StatoArmadio VARCHAR(50) PRIMARY KEY
+CREATE TABLE StatoMobilio (
+    StatoMobilio VARCHAR(50) PRIMARY KEY
 );
 CREATE TABLE Location(
 	IdLocation INT AUTO_INCREMENT PRIMARY KEY,
@@ -15,50 +14,46 @@ CREATE TABLE Location(
     Piano VARCHAR(50) NOT NULL,
     UNIQUE(Stabile,Piano)
 );
-CREATE TABLE Armadio (
-    IdArmadio INT AUTO_INCREMENT PRIMARY KEY,
-    Numero INT NOT NULL,
-    IdLocation INT NOT NULL,
-    CategoriaArmadio VARCHAR(50) NOT NULL,
-    StatoArmadio VARCHAR(50) NOT NULL,
-    FOREIGN KEY (CategoriaArmadio) REFERENCES CategoriaArmadio(CategoriaArmadio),
-    FOREIGN KEY (IdLocation) REFERENCES Location(IdLocation),
-    FOREIGN KEY (StatoArmadio) REFERENCES StatoArmadio(StatoArmadio),
-    UNIQUE (IdLocation, Numero)
-);
-
-CREATE TABLE StatoChiave (
-    StatoChiave VARCHAR(50) PRIMARY KEY
-);
 
 
 CREATE TABLE Chiave (
-    IdChiave INT AUTO_INCREMENT PRIMARY KEY,
-    IdArmadio INT NOT NULL,
-    StatoChiave VARCHAR(50) NOT NULL,
-    FOREIGN KEY (StatoChiave) REFERENCES StatoChiave(StatoChiave),
-    UNIQUE (StatoChiave)
+   NumeroChiave INT PRIMARY KEY 
 );
+
+CREATE TABLE Mobilio (
+    IdMobilio INT AUTO_INCREMENT PRIMARY KEY,
+    Numero INT NOT NULL,
+    IdLocation INT NOT NULL,
+    TipoMobilio VARCHAR(50) NOT NULL,
+    NumeroChiave INT NOT NULL, 
+    StatoMobilio VARCHAR(50) NOT NULL,
+	FOREIGN KEY (NumeroChiave) REFERENCES Chiave(NumeroChiave),
+    FOREIGN KEY (TipoMobilio) REFERENCES TipoMobilio(TipoMobilio),
+    FOREIGN KEY (IdLocation) REFERENCES Location(IdLocation),
+    FOREIGN KEY (StatoMobilio) REFERENCES StatoMobilio(StatoMobilio),
+    UNIQUE (IdLocation, Numero)
+);
+
 
 
 CREATE TABLE Dipartimento (
    NomeDipartimento VARCHAR(50) PRIMARY KEY
 );
 
-CREATE TABLE TipoUtente (
-   TipoUtente VARCHAR(50) PRIMARY KEY
+CREATE TABLE TipoPersona (
+   TipoPersona VARCHAR(50) PRIMARY KEY
 );
 
 
-CREATE TABLE Utente (
-    IdUtente INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Persona (
+    IdPersona INT AUTO_INCREMENT PRIMARY KEY,
     Nome VARCHAR(50) NOT NULL,
     Cognome VARCHAR(50) NOT NULL,
     Email VARCHAR(255) UNIQUE NOT NULL,
     IdMonitor VARCHAR(50) UNIQUE NOT NULL,
-    TipoUtente VARCHAR(50) NOT NULL,
+    TipoPersona VARCHAR(50) NOT NULL,
     NomeDipartimento VARCHAR(50) NOT NULL,
-    FOREIGN KEY (TipoUtente) REFERENCES TipoUtente(TipoUtente),
+    FOREIGN KEY (TipoPersona) REFERENCES TipoPersona(TipoPersona),
    	FOREIGN KEY (NomeDipartimento) REFERENCES Dipartimento(NomeDipartimento)
 );
 
@@ -69,16 +64,22 @@ CREATE TABLE TipoPagamento (
 
 CREATE TABLE Noleggio (
     IdNoleggio INT AUTO_INCREMENT PRIMARY KEY,
-    DataInizio DATETIME NOT NULL,
-    DataFine DATETIME NOT NULL,
-	Pagamento VARCHAR(30) NOT NULL,
+    DataInizio DATE NOT NULL,
+    DataFine DATE NOT NULL,
+    IdMobilio INT NOT NULL,    
+    IdPersona INT NOT NULL,    
+    Attivo BOOL default True,
+    FOREIGN KEY (IdMobilio) REFERENCES Mobilio(IdMobilio),
+    FOREIGN KEY (IdPersona) REFERENCES Persona(IdPersona),
+    UNIQUE (IdMobilio, DataInizio, DataFine)
+);
+
+CREATE TABLE Movimento (
+    IdMovimento INT AUTO_INCREMENT PRIMARY KEY,
+    IdNoleggio INT NOT NULL,
     Cauzione DECIMAL(10,2) NOT NULL DEFAULT 0,
-    IdArmadio INT NOT NULL,
-    IdChiave INT NOT NULL,
-    IdUtente INT NOT NULL,
-    FOREIGN KEY (Pagamento) REFERENCES TipoPagamento(Pagamento),
-    FOREIGN KEY (IdArmadio) REFERENCES Armadio(IdArmadio),
-    FOREIGN KEY (IdChiave) REFERENCES Chiave(IdChiave),
-    FOREIGN KEY (IdUtente) REFERENCES Utente(IdUtente),
-    UNIQUE (IdArmadio, DataInizio, DataFine)
+    Data DATE NOT NULL,
+	Pagamento VARCHAR(30) NOT NULL,
+	FOREIGN KEY (Pagamento) REFERENCES TipoPagamento(Pagamento),
+    FOREIGN KEY (IdNoleggio) REFERENCES Noleggio(IdNoleggio)
 );
