@@ -8,12 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContextFactory<AppDbContext>(x => x.UseNpgsql(builder.Configuration["DATABASE"]));
+
+
+builder.Services.AddDbContextFactory<PostgresContext>(x => x.UseNpgsql(builder.Configuration["DATABASE"]));
 
 var app = builder.Build();
 
 
-var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<AppDbContext>();
+var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<PostgresContext>();
 await context.Database.MigrateAsync();
 
 

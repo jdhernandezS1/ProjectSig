@@ -4,10 +4,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace armadieti2.Migrations.Postgres
+namespace armadieti2.Migrations
 {
     /// <inheritdoc />
-    public partial class movimentos : Migration
+    public partial class Initialmigratin : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

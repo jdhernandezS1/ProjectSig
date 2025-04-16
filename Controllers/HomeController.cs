@@ -12,15 +12,9 @@ namespace armadieti2.Controllers
 {
     public class HomeController : Controller
     {
-<<<<<<< HEAD
         private readonly PostgresContext _context;
 
         public HomeController(PostgresContext context)
-=======
-        private readonly AppDbContext _context;
-
-        public HomeController(AppDbContext context)
->>>>>>> 2036f1c701d93c19b379b0a54ff893de8c5f3de4
         {
             _context = context;
         }
@@ -28,15 +22,8 @@ namespace armadieti2.Controllers
         // GET: home
         public async Task<IActionResult> Index()
         {
-<<<<<<< HEAD
-            //var appDbContext = _context.ArmadioModel.Include(a => a.LocationModel).Include(a => a.StatoArmadioModel);
-            //return View(await appDbContext.ToListAsync());
             return View();
 
-=======
-            var appDbContext = _context.ArmadioModel.Include(a => a.LocationModel).Include(a => a.StatoArmadioModel);
-            return View(await appDbContext.ToListAsync());            
->>>>>>> 2036f1c701d93c19b379b0a54ff893de8c5f3de4
         }
 
         public IActionResult Privacy()
