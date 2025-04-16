@@ -1,0 +1,102 @@
+<<<<<<< HEAD:Views/Mobilios/Create.cshtml
+﻿@model armadieti2.Models.Mobilio
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Mobilio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Numero" class="control-label"></label>
+                <input asp-for="Numero" class="form-control" />
+                <span asp-validation-for="Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Idlocation" class="control-label"></label>
+                <select asp-for="Idlocation" class ="form-control" asp-items="ViewBag.Idlocation"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tipomobilio" class="control-label"></label>
+                <select asp-for="Tipomobilio" class ="form-control" asp-items="ViewBag.Tipomobilio"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Numerochiave" class="control-label"></label>
+                <select asp-for="Numerochiave" class ="form-control" asp-items="ViewBag.Numerochiave"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Statomobilio" class="control-label"></label>
+                <select asp-for="Statomobilio" class ="form-control" asp-items="ViewBag.Statomobilio"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+=======
+﻿@model armadieti2.Models.ArmadioModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ArmadioModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdLocation" class="control-label"></label>
+                <select asp-for="IdLocation" class ="form-control" asp-items="ViewBag.IdLocation"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Numero" class="control-label"></label>
+                <input asp-for="Numero" class="form-control" />
+                <span asp-validation-for="Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="StatoChiave" /> @Html.DisplayNameFor(model => model.StatoChiave)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdStatoArmadio" class="control-label"></label>
+                <select asp-for="IdStatoArmadio" class ="form-control" asp-items="ViewBag.IdStatoArmadio"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCategoria" class="control-label"></label>
+                <select asp-for="IdCategoria" class ="form-control" asp-items="ViewBag.IdCategoria"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+>>>>>>> 2036f1c701d93c19b379b0a54ff893de8c5f3de4:Views/Armadios/Create.cshtml

@@ -26,6 +26,20 @@ namespace armadieti2.Models
         }
 
         //ARMADI MODELS
+<<<<<<< HEAD
+        //public DbSet<CategoriaArmadioModel> CategoriaArmadioModel { get; set; } = default!;
+        //public DbSet<ArmadioModel> ArmadioModel { get; set; } = default!;
+        ////NOLEGGI MODELS
+        //public DbSet<TipoPagamentoModel> TipoPagamentoModel { get; set; } = default!;
+        //public DbSet<NoleggioModel> NoleggioModel { get; set; } = default!;
+        ////Utenti models
+        //public DbSet<DipartimentoModel> DipartimentoModel { get; set; } = default!;
+        //public DbSet<TipoUtenteModel> TipoUtenteModel { get; set; } = default!;
+        //public DbSet<TipoUtenteModel> UtenteModel { get; set; } = default!;
+        //public DbSet<StatoArmadioModel> StatoArmadioModel { get; set; } = default!;
+        //public DbSet<UtenteModel> UtenteModel_1 { get; set; } = default!;
+        //public DbSet<armadieti2.Models.LocationModel> LocationModel { get; set; } = default!;
+=======
         public DbSet<CategoriaArmadioModel> CategoriaArmadioModel { get; set; } = default!;
         public DbSet<ArmadioModel> ArmadioModel { get; set; } = default!;
         //NOLEGGI MODELS
@@ -38,6 +52,7 @@ namespace armadieti2.Models
         public DbSet<StatoArmadioModel> StatoArmadioModel { get; set; } = default!;
         public DbSet<UtenteModel> UtenteModel_1 { get; set; } = default!;
         public DbSet<armadieti2.Models.LocationModel> LocationModel { get; set; } = default!;
+>>>>>>> 2036f1c701d93c19b379b0a54ff893de8c5f3de4
 
     }
 }
