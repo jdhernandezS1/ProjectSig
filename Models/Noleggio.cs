@@ -1,25 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace armadieti2.Models;
 
 public partial class Noleggio
 {
+    [Key]
     public int Idnoleggio { get; set; }
-
-    public DateOnly Datainizio { get; set; }
-
-    public DateOnly Datafine { get; set; }
-
+    [Required]
+    public DateTime Datainizio { get; set; }
+    [Required]
+    public DateTime Datafine { get; set; }
+    [Required]
     public int Idmobilio { get; set; }
-
+    [Required]
     public int Idpersona { get; set; }
 
-    public bool? Attivo { get; set; }
+    [Required]
+    [Display(Name = "Stato")]
+    public StatoNoleggioEnum StatoAttivo { get; set; } = StatoNoleggioEnum.Attivo; 
 
-    public virtual Mobilio IdmobilioNavigation { get; set; } = null!;
+    [ForeignKey("Idmobilio")]
+    public virtual Mobilio? IdmobilioNavigation { get; set; }
 
-    public virtual Persona IdpersonaNavigation { get; set; } = null!;
+    [ForeignKey("Idpersona")]
+    public virtual Persona? IdpersonaNavigation { get; set; } 
 
     public virtual ICollection<Movimento> Movimentos { get; set; } = new List<Movimento>();
 }

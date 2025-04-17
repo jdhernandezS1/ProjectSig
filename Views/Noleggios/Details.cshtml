@@ -1,0 +1,48 @@
+﻿@model armadieti2.Models.Noleggio
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Noleggio</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Datainizio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Datainizio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Datafine)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Datafine)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StatoAttivo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StatoAttivo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdmobilioNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdmobilioNavigation.Idmobilio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdpersonaNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdpersonaNavigation.Cognome)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Idnoleggio">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

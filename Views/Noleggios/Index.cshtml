@@ -1,0 +1,59 @@
+﻿@model IEnumerable<armadieti2.Models.Noleggio>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Datainizio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datafine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatoAttivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdmobilioNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdpersonaNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datainizio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datafine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatoAttivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdmobilioNavigation.Idmobilio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdpersonaNavigation.Cognome)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Idnoleggio">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Idnoleggio">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Idnoleggio">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

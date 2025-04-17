@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "F:\\study\\SIG\\project\\git\\ProjectSig\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\models\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:models\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\controllers\\noleggioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:controllers\\noleggioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\models\\noleggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:models\\noleggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\views\\noleggios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\noleggios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\models\\statonoleggioenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:models\\statonoleggioenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PostgresContext.cs",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\PostgresContext.cs",
-              "RelativeDocumentMoniker": "Models\\PostgresContext.cs",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\PostgresContext.cs",
-              "RelativeToolTip": "Models\\PostgresContext.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwC4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Location.cs",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\Location.cs",
+              "RelativeDocumentMoniker": "Models\\Location.cs",
+              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\Location.cs",
+              "RelativeToolTip": "Models\\Location.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:14:56.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-16T13:12:51.153Z",
+              "WhenOpened": "2025-04-16T18:01:28.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Noleggios\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Noleggios\\Create.cshtml",
+              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Noleggios\\Create.cshtml",
+              "RelativeToolTip": "Views\\Noleggios\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-16T13:12:35.539Z",
+              "WhenOpened": "2025-04-16T17:53:22.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "NoleggiosController.cs",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Controllers\\NoleggiosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NoleggiosController.cs",
+              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Controllers\\NoleggiosController.cs",
+              "RelativeToolTip": "Controllers\\NoleggiosController.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAwHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:12:29.969Z",
+              "WhenOpened": "2025-04-16T17:46:55.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StatoNoleggioEnum.cs",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\StatoNoleggioEnum.cs",
+              "RelativeDocumentMoniker": "Models\\StatoNoleggioEnum.cs",
+              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\StatoNoleggioEnum.cs",
+              "RelativeToolTip": "Models\\StatoNoleggioEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T17:44:02.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "Noleggio.cs",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\Noleggio.cs",
+              "RelativeDocumentMoniker": "Models\\Noleggio.cs",
+              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Models\\Noleggio.cs",
+              "RelativeToolTip": "Models\\Noleggio.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T09:50:44.126Z",
+              "WhenOpened": "2025-04-16T15:25:47.836Z",
               "EditorCaption": ""
             }
           ]

@@ -1,29 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace armadieti2.Models;
 
 public partial class Mobilio
 {
+    [Key]
     public int Idmobilio { get; set; }
-
+    [Required]
     public int Numero { get; set; }
-
+    [Required]
     public int Idlocation { get; set; }
-
-    public string Tipomobilio { get; set; } = null!;
-
+    [Required]
+    public int Tipomobilio { get; set; } 
+    [Required]
     public int Numerochiave { get; set; }
-
-    public string Statomobilio { get; set; } = null!;
-
-    public virtual Location IdlocationNavigation { get; set; } = null!;
+    [Required]
+    public int Statomobilio { get; set; }
+    [ForeignKey("Idlocation")]
+    public virtual Location? IdlocationNavigation { get; set; }
 
     public virtual ICollection<Noleggio> Noleggios { get; set; } = new List<Noleggio>();
-
-    public virtual Chiave NumerochiaveNavigation { get; set; } = null!;
-
-    public virtual Statomobilio StatomobilioNavigation { get; set; } = null!;
-
-    public virtual Tipomobilio TipomobilioNavigation { get; set; } = null!;
+    [ForeignKey("Numerochiave")]
+    public virtual Chiave? NumerochiaveNavigation { get; set; }
+    [ForeignKey("Statomobilio")]
+    public virtual Statomobilio? StatomobilioNavigation { get; set; } 
+    [ForeignKey("Tipomobilio")]
+    public virtual Tipomobilio? TipomobilioNavigation { get; set; } 
 }

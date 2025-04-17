@@ -24,94 +24,84 @@ namespace armadieti2.Migrations
 
             modelBuilder.Entity("armadieti2.Models.Chiave", b =>
                 {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
                     b.Property<int>("Numerochiave")
-                        .HasColumnType("integer")
-                        .HasColumnName("numerochiave");
+                        .HasColumnType("integer");
 
-                    b.HasKey("Numerochiave")
-                        .HasName("chiave_pkey");
+                    b.HasKey("id");
 
-                    b.ToTable("chiave", (string)null);
+                    b.ToTable("Chiaves");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Dipartimento", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
                     b.Property<string>("Nomedipartimento")
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("nomedipartimento");
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.HasKey("Nomedipartimento")
-                        .HasName("dipartimento_pkey");
+                    b.HasKey("Id");
 
-                    b.ToTable("dipartimento", (string)null);
+                    b.ToTable("Dipartimentos");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Location", b =>
                 {
                     b.Property<int>("Idlocation")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("idlocation");
+                        .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Idlocation"));
 
                     b.Property<string>("Piano")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("piano");
+                        .HasColumnType("text");
 
                     b.Property<string>("Stabile")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("stabile");
+                        .HasColumnType("text");
 
-                    b.HasKey("Idlocation")
-                        .HasName("location_pkey");
+                    b.HasKey("Idlocation");
 
-                    b.HasIndex(new[] { "Stabile", "Piano" }, "location_stabile_piano_key")
-                        .IsUnique();
-
-                    b.ToTable("location", (string)null);
+                    b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Mobilio", b =>
                 {
                     b.Property<int>("Idmobilio")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("idmobilio");
+                        .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Idmobilio"));
 
                     b.Property<int>("Idlocation")
-                        .HasColumnType("integer")
-                        .HasColumnName("idlocation");
+                        .HasColumnType("integer");
 
                     b.Property<int>("Numero")
-                        .HasColumnType("integer")
-                        .HasColumnName("numero");
+                        .HasColumnType("integer");
 
                     b.Property<int>("Numerochiave")
-                        .HasColumnType("integer")
-                        .HasColumnName("numerochiave");
+                        .HasColumnType("integer");
 
-                    b.Property<string>("Statomobilio")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("statomobilio");
+                    b.Property<int>("Statomobilio")
+                        .HasColumnType("integer");
 
-                    b.Property<string>("Tipomobilio")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("tipomobilio");
+                    b.Property<int>("Tipomobilio")
+                        .HasColumnType("integer");
 
-                    b.HasKey("Idmobilio")
-                        .HasName("mobilio_pkey");
+                    b.HasKey("Idmobilio");
+
+                    b.HasIndex("Idlocation");
 
                     b.HasIndex("Numerochiave");
 
@@ -119,203 +109,175 @@ namespace armadieti2.Migrations
 
                     b.HasIndex("Tipomobilio");
 
-                    b.HasIndex(new[] { "Idlocation", "Numero" }, "mobilio_idlocation_numero_key")
-                        .IsUnique();
-
-                    b.ToTable("mobilio", (string)null);
+                    b.ToTable("Mobilios");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Movimento", b =>
                 {
                     b.Property<int>("Idmovimento")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("idmovimento");
+                        .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Idmovimento"));
 
                     b.Property<decimal>("Cauzione")
-                        .HasPrecision(10, 2)
-                        .HasColumnType("numeric(10,2)")
-                        .HasColumnName("cauzione");
+                        .HasColumnType("numeric");
 
-                    b.Property<DateOnly>("Data")
-                        .HasColumnType("date")
-                        .HasColumnName("data");
+                    b.Property<DateTime>("Data")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("Idnoleggio")
-                        .HasColumnType("integer")
-                        .HasColumnName("idnoleggio");
+                        .HasColumnType("integer");
 
-                    b.Property<string>("Pagamento")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("character varying(30)")
-                        .HasColumnName("pagamento");
+                    b.Property<int>("Pagamento")
+                        .HasColumnType("integer");
 
-                    b.HasKey("Idmovimento")
-                        .HasName("movimento_pkey");
+                    b.HasKey("Idmovimento");
 
                     b.HasIndex("Idnoleggio");
 
                     b.HasIndex("Pagamento");
 
-                    b.ToTable("movimento", (string)null);
+                    b.ToTable("Movimentos");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Noleggio", b =>
                 {
                     b.Property<int>("Idnoleggio")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("idnoleggio");
+                        .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Idnoleggio"));
 
-                    b.Property<bool?>("Attivo")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(true)
-                        .HasColumnName("attivo");
+                    b.Property<DateTime>("Datafine")
+                        .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateOnly>("Datafine")
-                        .HasColumnType("date")
-                        .HasColumnName("datafine");
-
-                    b.Property<DateOnly>("Datainizio")
-                        .HasColumnType("date")
-                        .HasColumnName("datainizio");
+                    b.Property<DateTime>("Datainizio")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("Idmobilio")
-                        .HasColumnType("integer")
-                        .HasColumnName("idmobilio");
+                        .HasColumnType("integer");
 
                     b.Property<int>("Idpersona")
-                        .HasColumnType("integer")
-                        .HasColumnName("idpersona");
+                        .HasColumnType("integer");
 
-                    b.HasKey("Idnoleggio")
-                        .HasName("noleggio_pkey");
+                    b.Property<int>("StatoAttivo")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Idnoleggio");
+
+                    b.HasIndex("Idmobilio");
 
                     b.HasIndex("Idpersona");
 
-                    b.HasIndex(new[] { "Idmobilio", "Datainizio", "Datafine" }, "noleggio_idmobilio_datainizio_datafine_key")
-                        .IsUnique();
-
-                    b.ToTable("noleggio", (string)null);
+                    b.ToTable("Noleggios");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Persona", b =>
                 {
                     b.Property<int>("Idpersona")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("idpersona");
+                        .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Idpersona"));
 
                     b.Property<string>("Cognome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("cognome");
+                        .HasColumnType("text");
+
+                    b.Property<int>("Dipartimento")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)")
-                        .HasColumnName("email");
+                        .HasColumnType("text");
 
                     b.Property<string>("Idmonitor")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("idmonitor");
+                        .HasColumnType("text");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("nome");
+                        .HasColumnType("text");
 
-                    b.Property<string>("Nomedipartimento")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("nomedipartimento");
+                    b.Property<int>("Tipopersona")
+                        .HasColumnType("integer");
 
-                    b.Property<string>("Tipopersona")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("tipopersona");
+                    b.HasKey("Idpersona");
 
-                    b.HasKey("Idpersona")
-                        .HasName("persona_pkey");
-
-                    b.HasIndex("Nomedipartimento");
+                    b.HasIndex("Dipartimento");
 
                     b.HasIndex("Tipopersona");
 
-                    b.HasIndex(new[] { "Email" }, "persona_email_key")
-                        .IsUnique();
-
-                    b.HasIndex(new[] { "Idmonitor" }, "persona_idmonitor_key")
-                        .IsUnique();
-
-                    b.ToTable("persona", (string)null);
+                    b.ToTable("Personas");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Statomobilio", b =>
                 {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
                     b.Property<string>("Statomobilio1")
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("statomobilio");
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.HasKey("Statomobilio1")
-                        .HasName("statomobilio_pkey");
+                    b.HasKey("id");
 
-                    b.ToTable("statomobilio", (string)null);
+                    b.ToTable("Statomobilios");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Tipomobilio", b =>
                 {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
                     b.Property<string>("Tipomobilio1")
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("tipomobilio");
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.HasKey("Tipomobilio1")
-                        .HasName("tipomobilio_pkey");
+                    b.HasKey("id");
 
-                    b.ToTable("tipomobilio", (string)null);
+                    b.ToTable("Tipomobilios");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Tipopagamento", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
                     b.Property<string>("Pagamento")
-                        .HasMaxLength(30)
-                        .HasColumnType("character varying(30)")
-                        .HasColumnName("pagamento");
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.HasKey("Pagamento")
-                        .HasName("tipopagamento_pkey");
+                    b.HasKey("Id");
 
-                    b.ToTable("tipopagamento", (string)null);
+                    b.ToTable("Tipopagamentos");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Tipopersona", b =>
                 {
+                    b.Property<int>("IdTiPersona")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdTiPersona"));
+
                     b.Property<string>("Tipopersona1")
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("tipopersona");
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.HasKey("Tipopersona1")
-                        .HasName("tipopersona_pkey");
+                    b.HasKey("IdTiPersona");
 
-                    b.ToTable("tipopersona", (string)null);
+                    b.ToTable("Tipopersonas");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Mobilio", b =>
@@ -323,26 +285,26 @@ namespace armadieti2.Migrations
                     b.HasOne("armadieti2.Models.Location", "IdlocationNavigation")
                         .WithMany("Mobilios")
                         .HasForeignKey("Idlocation")
-                        .IsRequired()
-                        .HasConstraintName("mobilio_idlocation_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("armadieti2.Models.Chiave", "NumerochiaveNavigation")
                         .WithMany("Mobilios")
                         .HasForeignKey("Numerochiave")
-                        .IsRequired()
-                        .HasConstraintName("mobilio_numerochiave_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("armadieti2.Models.Statomobilio", "StatomobilioNavigation")
                         .WithMany("Mobilios")
                         .HasForeignKey("Statomobilio")
-                        .IsRequired()
-                        .HasConstraintName("mobilio_statomobilio_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("armadieti2.Models.Tipomobilio", "TipomobilioNavigation")
                         .WithMany("Mobilios")
                         .HasForeignKey("Tipomobilio")
-                        .IsRequired()
-                        .HasConstraintName("mobilio_tipomobilio_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("IdlocationNavigation");
 
@@ -358,14 +320,14 @@ namespace armadieti2.Migrations
                     b.HasOne("armadieti2.Models.Noleggio", "IdnoleggioNavigation")
                         .WithMany("Movimentos")
                         .HasForeignKey("Idnoleggio")
-                        .IsRequired()
-                        .HasConstraintName("movimento_idnoleggio_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("armadieti2.Models.Tipopagamento", "PagamentoNavigation")
                         .WithMany("Movimentos")
                         .HasForeignKey("Pagamento")
-                        .IsRequired()
-                        .HasConstraintName("movimento_pagamento_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("IdnoleggioNavigation");
 
@@ -377,14 +339,14 @@ namespace armadieti2.Migrations
                     b.HasOne("armadieti2.Models.Mobilio", "IdmobilioNavigation")
                         .WithMany("Noleggios")
                         .HasForeignKey("Idmobilio")
-                        .IsRequired()
-                        .HasConstraintName("noleggio_idmobilio_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("armadieti2.Models.Persona", "IdpersonaNavigation")
                         .WithMany("Noleggios")
                         .HasForeignKey("Idpersona")
-                        .IsRequired()
-                        .HasConstraintName("noleggio_idpersona_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("IdmobilioNavigation");
 
@@ -395,19 +357,19 @@ namespace armadieti2.Migrations
                 {
                     b.HasOne("armadieti2.Models.Dipartimento", "NomedipartimentoNavigation")
                         .WithMany("Personas")
-                        .HasForeignKey("Nomedipartimento")
-                        .IsRequired()
-                        .HasConstraintName("persona_nomedipartimento_fkey");
+                        .HasForeignKey("Dipartimento")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("armadieti2.Models.Tipopersona", "TipopersonaNavigation")
+                    b.HasOne("armadieti2.Models.Tipopersona", "Tipopersonas")
                         .WithMany("Personas")
                         .HasForeignKey("Tipopersona")
-                        .IsRequired()
-                        .HasConstraintName("persona_tipopersona_fkey");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("NomedipartimentoNavigation");
 
-                    b.Navigation("TipopersonaNavigation");
+                    b.Navigation("Tipopersonas");
                 });
 
             modelBuilder.Entity("armadieti2.Models.Chiave", b =>
