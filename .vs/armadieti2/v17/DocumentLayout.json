@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "F:\\study\\SIG\\project\\git\\ProjectSig\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\views\\movimentos\\movimento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\movimentos\\movimento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\views\\movimentos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\movimentos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\views\\movimentos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\movimentos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\controllers\\movimentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:controllers\\movimentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\git\\projectsig\\views\\noleggios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\noleggios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Movimentos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Movimentos\\Index.cshtml",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Movimentos\\Index.cshtml",
-              "RelativeToolTip": "Views\\Movimentos\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-17T14:19:56.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Movimentos\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Movimentos\\Details.cshtml",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Movimentos\\Details.cshtml",
-              "RelativeToolTip": "Views\\Movimentos\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-17T14:10:23.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Movimento.cshtml",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Movimentos\\Movimento.cshtml",
-              "RelativeDocumentMoniker": "Views\\Movimentos\\Movimento.cshtml",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Movimentos\\Movimento.cshtml",
-              "RelativeToolTip": "Views\\Movimentos\\Movimento.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Noleggios\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Noleggios\\Details.cshtml",
+              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Views\\Noleggios\\Details.cshtml",
+              "RelativeToolTip": "Views\\Noleggios\\Details.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-17T13:57:01.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MovimentosController.cs",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\git\\ProjectSig\\Controllers\\MovimentosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MovimentosController.cs",
-              "ToolTip": "F:\\study\\SIG\\project\\git\\ProjectSig\\Controllers\\MovimentosController.cs",
-              "RelativeToolTip": "Controllers\\MovimentosController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:26:57.666Z",
+              "WhenOpened": "2025-04-17T14:52:05.948Z",
               "EditorCaption": ""
             }
           ]
