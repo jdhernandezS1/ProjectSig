@@ -25,6 +25,28 @@ namespace armadieti2.Controllers
             return View(await postgresContext.ToListAsync());
         }
 
+        // GET: Movimento/5
+        public async Task<IActionResult> Movimento(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var movimentos = await _context.Movimentos
+                    .Where(m => m.Idnoleggio == id)
+                    .Include(m => m.IdnoleggioNavigation)
+                    .Include(m => m.PagamentoNavigation)
+                    .ToListAsync();
+
+            if (movimentos == null)
+            {
+                return NotFound();
+            }
+
+            return View(movimentos);
+        }
+
         // GET: Movimentos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -62,6 +84,7 @@ namespace armadieti2.Controllers
         {
             if (ModelState.IsValid)
             {
+                movimento.Data = DateTime.SpecifyKind(movimento.Data, DateTimeKind.Utc);
                 _context.Add(movimento);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -105,6 +128,7 @@ namespace armadieti2.Controllers
             {
                 try
                 {
+                    movimento.Data = DateTime.SpecifyKind(movimento.Data, DateTimeKind.Utc);
                     _context.Update(movimento);
                     await _context.SaveChangesAsync();
                 }
