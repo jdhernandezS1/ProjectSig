@@ -1,5 +1,5 @@
-﻿@model IEnumerable<armadieti2.Models.Mobilio>
-
+﻿@* @model IEnumerable<armadieti2.Models.Mobilio> *@
+@model IEnumerable<armadieti2.Models.MobilioConNoleggioView>
 @{
     ViewData["Title"] = "Scorta";
 
@@ -18,21 +18,40 @@
 
 <h1>Mobili per Stabile</h1>
 
-@foreach (var stabileGroup in Model.GroupBy(m => m.IdlocationNavigation.Stabile))
+<p>
+    <span class="text-success ">DISPONIBILE</span> <span class="bg-success">  </span>
+    <span class="text-warning "> NON DISPONIBILE</span> <span class="bg-warning">  </span>
+</p>
+
+@foreach (var stabileGroup in Model.GroupBy(m => m.Mobilio.IdlocationNavigation.Stabile))
 {
     <h3 class="mt-4">@stabileGroup.Key</h3>
 
-    @foreach (var pianoGroup in stabileGroup.GroupBy(m => m.IdlocationNavigation.Piano))
+    @foreach (var pianoGroup in stabileGroup.GroupBy(m => m.Mobilio.IdlocationNavigation.Piano))
     {
         <h5 class="mt-3">Piano: @pianoGroup.Key</h5>
         <div class="d-flex flex-wrap gap-2">
             @foreach (var item in pianoGroup)
             {
-                var boxClass = GetBoxClass(item.StatomobilioNavigation.Statomobilio1);
+                var boxClass = GetBoxClass(item.Mobilio.StatomobilioNavigation.Statomobilio1);
+
                 <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
-                        <a asp-action="Create" asp-controller="noleggios" asp-route-id="@item.Idmobilio" class="text-white">✏
-                    <strong>@item.Numero</strong>                  
+                    @if (item.Mobilio.Statomobilio == 1) // available
+                    {
+                        <a asp-action="Create" asp-controller="Noleggios" asp-route-id="@item.Mobilio.Idmobilio" class="text-white">
+                            <strong>@item.Mobilio.Numero</strong>
                         </a>
+                    }
+                    else if (item.NoleggioAttivoId != null)
+                    {
+                        <a asp-action="Edit" asp-controller="Noleggios" asp-route-id="@item.NoleggioAttivoId" class="text-decoration-none text-white">
+                            <i class="fa-solid fa-file-pen"></i> <strong>@item.Mobilio.Numero</strong>
+                        </a>
+                    }
+                    else
+                    {
+                        <div><strong>@item.Mobilio.Numero</strong></div>
+                    }
                 </div>
             }
         </div>

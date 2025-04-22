@@ -22,11 +22,30 @@ namespace armadieti2.Controllers
         // GET: home
         public async Task<IActionResult> Index()
         {
-            var postgresContext = _context.Mobilios.Include(m => m.IdlocationNavigation).Include(m => m.NumerochiaveNavigation).Include(m => m.StatomobilioNavigation).Include(m => m.TipomobilioNavigation);
+            var mobilios = await _context.Mobilios
+                .Include(m => m.IdlocationNavigation)
+                .Include(m => m.NumerochiaveNavigation)
+                .Include(m => m.StatomobilioNavigation)
+                .Include(m => m.TipomobilioNavigation)
+                .ToListAsync();
 
-            return View(await postgresContext.ToListAsync());
+            var result = new List<MobilioConNoleggioView>();
 
+            foreach (var mobilio in mobilios)
+            {
+                var noleggioAttivo = await _context.Noleggios
+                    .FirstOrDefaultAsync(n => n.Idmobilio == mobilio.Idmobilio && n.StatoAttivo == StatoNoleggioEnum.Attivo);
+
+                result.Add(new MobilioConNoleggioView
+                {
+                    Mobilio = mobilio,
+                    NoleggioAttivoId = noleggioAttivo?.Idnoleggio
+                });
+            }
+
+            return View(result);
         }
+
 
         public IActionResult Privacy()
         {

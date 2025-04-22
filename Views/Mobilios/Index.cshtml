@@ -16,16 +16,16 @@
                 @Html.DisplayNameFor(model => model.Numero)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdlocationNavigation)
+                Stabile, Piano
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NumerochiaveNavigation)
+                Chiave
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.StatomobilioNavigation)
+                Stato
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TipomobilioNavigation)
+                Tipo mobilio
             </th>
             <th></th>
         </tr>
@@ -37,7 +37,7 @@
                 @Html.DisplayFor(modelItem => item.Numero)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdlocationNavigation.Piano)
+                    @Html.DisplayFor(modelItem => item.IdlocationNavigation.Stabile) / @Html.DisplayFor(modelItem => item.IdlocationNavigation.Piano)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NumerochiaveNavigation.id)

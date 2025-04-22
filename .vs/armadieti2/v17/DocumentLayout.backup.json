@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\views\\noleggios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\noleggios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\models\\mobilio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:models\\mobilio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\controllers\\noleggioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:controllers\\noleggioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mobilio.cs",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Models\\Mobilio.cs",
+              "RelativeDocumentMoniker": "Models\\Mobilio.cs",
+              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Models\\Mobilio.cs",
+              "RelativeToolTip": "Models\\Mobilio.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAD4vx0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T21:24:54.177Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,23 +49,9 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-22T15:09:50.753Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Noleggios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Noleggios\\Index.cshtml",
-              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Noleggios\\Index.cshtml",
-              "RelativeToolTip": "Views\\Noleggios\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-22T15:32:41.337Z",
+              "WhenOpened": "2025-04-22T21:18:22.605Z",
               "EditorCaption": ""
             },
             {
@@ -59,9 +62,22 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T15:08:11.863Z",
+              "WhenOpened": "2025-04-22T21:18:15.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NoleggiosController.cs",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\NoleggiosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NoleggiosController.cs",
+              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\NoleggiosController.cs",
+              "RelativeToolTip": "Controllers\\NoleggiosController.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAADwv8oAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T21:08:27.286Z",
               "EditorCaption": ""
             }
           ]

@@ -30,11 +30,7 @@
                 <label asp-for="Idpersona" class="control-label"></label>
                 <select asp-for="Idpersona" class ="form-control" asp-items="ViewBag.Idpersona"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="StatoAttivo" class="control-label"></label>
-                <select asp-for="StatoAttivo" class="form-control" asp-items="Html.GetEnumSelectList<armadieti2.Models.StatoNoleggioEnum>()"></select>
-                <span asp-validation-for="StatoAttivo" class="text-danger"></span>
-            </div>
+            <input type="hidden" asp-for="StatoAttivo" />
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

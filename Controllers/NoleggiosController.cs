@@ -46,12 +46,28 @@ namespace armadieti2.Controllers
         }
 
         // GET: Noleggios/Create
-        public IActionResult Create()
+        public IActionResult Create(int? id)
         {
-            ViewData["Idmobilio"] = new SelectList(_context.Mobilios, "Idmobilio", "Idmobilio");
+            var mobiliosDisponibili = _context.Mobilios
+                .Where(m => m.Statomobilio == 1)
+                .ToList();
+
+            // Si viene un id, lo seleccionamos
+            ViewData["Idmobilio"] = new SelectList(mobiliosDisponibili, "Idmobilio", "Idmobilio", id);
             ViewData["Idpersona"] = new SelectList(_context.Personas, "Idpersona", "Cognome");
-            return View();
+
+            var oggi = DateTime.Today;
+
+            var modello = new Noleggio
+            {
+                Idmobilio = id ?? 0,
+                Datainizio = oggi,
+                Datafine = oggi.AddDays(1)
+            };
+
+            return View(modello);
         }
+
 
         // POST: Noleggios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -65,14 +81,34 @@ namespace armadieti2.Controllers
                 noleggio.Datainizio = DateTime.SpecifyKind(noleggio.Datainizio, DateTimeKind.Utc);
                 noleggio.Datafine = DateTime.SpecifyKind(noleggio.Datafine, DateTimeKind.Utc);
 
-                _context.Add(noleggio);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                var mobilio = await _context.Mobilios.FindAsync(noleggio.Idmobilio);
+                if (mobilio == null)
+                {
+                    ModelState.AddModelError("", "Mobilio non trovato.");
+                }
+                else if (mobilio.Statomobilio != 1) // 1 = Disponibile
+                {
+                    ModelState.AddModelError("", "Il mobilio selezionato non è disponibile.");
+                }
+                else
+                {
+                    mobilio.Statomobilio = 2; // In uso
+                    _context.Mobilios.Update(mobilio);
+
+                    noleggio.StatoAttivo = StatoNoleggioEnum.Attivo; //  noleggio.StatoAttivo = 1;
+
+                    _context.Noleggios.Add(noleggio);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
-            ViewData["Idmobilio"] = new SelectList(_context.Mobilios, "Idmobilio", "Idmobilio", noleggio.Idmobilio);
+
+            ViewData["Idmobilio"] = new SelectList(_context.Mobilios.Where(m => m.Statomobilio == 1), "Idmobilio", "Idmobilio", noleggio.Idmobilio);
             ViewData["Idpersona"] = new SelectList(_context.Personas, "Idpersona", "Cognome", noleggio.Idpersona);
             return View(noleggio);
         }
+
+
 
         // GET: Noleggios/Edit/5
         public async Task<IActionResult> Edit(int? id)
