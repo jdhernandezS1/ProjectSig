@@ -17,265 +17,265 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = armadieti2
 build_property.RootNamespace = armadieti2
-build_property.ProjectDir = F:\study\SIG\project\git\ProjectSig\
+build_property.ProjectDir = F:\study\SIG\project\ProjectSig\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\study\SIG\project\git\ProjectSig
+build_property.MSBuildProjectDirectory = F:\study\SIG\project\ProjectSig
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Chiaves/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Chiaves/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Chiaves/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Chiaves/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Chiaves/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Chiaves/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Chiaves/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Chiaves/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Chiaves/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Chiaves/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpYXZlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Dipartimentos/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Dipartimentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Dipartimentos/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Dipartimentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Dipartimentos/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Dipartimentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Dipartimentos/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Dipartimentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Dipartimentos/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Dipartimentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlwYXJ0aW1lbnRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Home/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Home/Privacy.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Locations/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Locations/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Locations/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Locations/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Locations/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Locations/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Locations/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Locations/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Locations/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Locations/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Mobilios/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Mobilios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Mobilios/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Mobilios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Mobilios/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Mobilios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Mobilios/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Mobilios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Mobilios/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Mobilios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Movimentos/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Movimentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Movimentos/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Movimentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Movimentos/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Movimentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Movimentos/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Movimentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Movimentos/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Movimentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Movimentos/Movimento.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Movimentos/Movimento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvc1xNb3ZpbWVudG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Noleggios/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Noleggios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Noleggios/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Noleggios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaW9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Noleggios/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Noleggios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Noleggios/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Noleggios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Noleggios/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Noleggios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9sZWdnaW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Personas/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Personas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Personas/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Personas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Personas/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Personas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Personas/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Personas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Personas/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Personas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Shared/Error.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Statomobilios/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Statomobilios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9tb2JpbGlvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Statomobilios/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Statomobilios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9tb2JpbGlvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Statomobilios/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Statomobilios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9tb2JpbGlvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Statomobilios/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Statomobilios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9tb2JpbGlvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Statomobilios/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Statomobilios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdG9tb2JpbGlvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipomobilios/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipomobilios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb21vYmlsaW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipomobilios/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipomobilios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb21vYmlsaW9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipomobilios/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipomobilios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb21vYmlsaW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipomobilios/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipomobilios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb21vYmlsaW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipomobilios/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipomobilios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb21vYmlsaW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopagamentos/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopagamentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BhZ2FtZW50b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopagamentos/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopagamentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BhZ2FtZW50b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopagamentos/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopagamentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BhZ2FtZW50b3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopagamentos/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopagamentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BhZ2FtZW50b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopagamentos/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopagamentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BhZ2FtZW50b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopersonas/Create.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopersonas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BlcnNvbmFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopersonas/Delete.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopersonas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BlcnNvbmFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopersonas/Details.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopersonas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BlcnNvbmFzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopersonas/Edit.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopersonas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BlcnNvbmFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Tipopersonas/Index.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Tipopersonas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3BlcnNvbmFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/_ViewImports.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/_ViewStart.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/study/SIG/project/git/ProjectSig/Views/Shared/_Layout.cshtml]
+[F:/study/SIG/project/ProjectSig/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0yrl383oae

@@ -1,12 +1,40 @@
+﻿@model IEnumerable<armadieti2.Models.Mobilio>
+
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Scorta";
+
+    // function to select colors of the cells
+    string GetBoxClass(string stato)
+    {
+        return stato switch
+        {
+            "Disponibile" => "bg-success text-white",
+            "In uso" => "bg-warning text-dark",
+            "In manutenzione" => "bg-danger text-white",
+            _ => "bg-secondary text-white"
+        };
+    }
 }
 
-<table class="table">
-    <thead>
-        
-    </thead>
-    <tbody>
+<h1>Mobili per Stabile</h1>
 
-    </tbody>
-</table>
+@foreach (var stabileGroup in Model.GroupBy(m => m.IdlocationNavigation.Stabile))
+{
+    <h3 class="mt-4">@stabileGroup.Key</h3>
+
+    @foreach (var pianoGroup in stabileGroup.GroupBy(m => m.IdlocationNavigation.Piano))
+    {
+        <h5 class="mt-3">Piano: @pianoGroup.Key</h5>
+        <div class="d-flex flex-wrap gap-2">
+            @foreach (var item in pianoGroup)
+            {
+                var boxClass = GetBoxClass(item.StatomobilioNavigation.Statomobilio1);
+                <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
+                        <a asp-action="Create" asp-controller="noleggios" asp-route-id="@item.Idmobilio" class="text-white">✏
+                    <strong>@item.Numero</strong>                  
+                        </a>
+                </div>
+            }
+        </div>
+    }
+}

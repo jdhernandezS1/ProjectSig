@@ -10,6 +10,7 @@
         "dependencies": {
           "DotNetEnv": "3.1.1",
           "FluentAssertions": "8.1.1",
+          "FontAwesome": "4.7.0",
           "Microsoft.EntityFrameworkCore": "9.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.2",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.21.0",
@@ -44,6 +45,7 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {},
       "Humanizer/2.14.1": {
         "dependencies": {
           "Humanizer.Core.af": "2.14.1",
@@ -2498,6 +2500,13 @@
       "sha512": "sha512-tzrZ95x7TWY4panvAhVoHg5zIhg4768Cx+8ZPoKR2sDPu2oCvVeg3ts0TTL0aJlIfZ1NGxCtBP5s555AgXJozg==",
       "path": "fluentassertions/8.1.1",
       "hashPath": "fluentassertions.8.1.1.nupkg.sha512"
+    },
+    "FontAwesome/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "path": "fontawesome/4.7.0",
+      "hashPath": "fontawesome.4.7.0.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",

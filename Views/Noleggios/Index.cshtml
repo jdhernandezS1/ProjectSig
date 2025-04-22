@@ -13,22 +13,22 @@
     <thead>
         <tr>
             <th>
-                Mov
+                Movimenti
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Datainizio)
+                @Html.DisplayNameFor(model => model.Datainizio) <i class="fa-solid fa-calendar-days"></i>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Datafine)
+                @Html.DisplayNameFor(model => model.Datafine) <i class="fa-regular fa-calendar-xmark"></i>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.StatoAttivo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdmobilioNavigation)
+                Movilio
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdpersonaNavigation)
+                Persona
             </th>
             <th></th>
         </tr>
@@ -37,7 +37,9 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                <a asp-controller="movimentos" asp-action="movimento" asp-route-id="@item.Idnoleggio">MOV</a>
+                <a asp-controller="movimentos" asp-action="movimento" asp-route-id="@item.Idnoleggio">
+                        <i class="fa fa-solid fa-list-check"></i>
+                    </a>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Datainizio)
@@ -49,10 +51,10 @@
                 @Html.DisplayFor(modelItem => item.StatoAttivo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdmobilioNavigation.Idmobilio)
+                @Html.DisplayFor(modelItem => item.IdmobilioNavigation.Numero)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdpersonaNavigation.Cognome)
+                    @Html.DisplayFor(modelItem => item.IdpersonaNavigation.Cognome) @Html.DisplayFor(modelItem => item.IdpersonaNavigation.Nome)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Idnoleggio">Edit</a> |

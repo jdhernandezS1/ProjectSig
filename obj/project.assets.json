@@ -32,6 +32,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -3751,6 +3754,27 @@
         "lib/netstandard2.1/FluentAssertions.dll",
         "lib/netstandard2.1/FluentAssertions.pdb",
         "lib/netstandard2.1/FluentAssertions.xml"
+      ]
+    },
+    "FontAwesome/4.7.0": {
+      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "type": "package",
+      "path": "fontawesome/4.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/font-awesome.css",
+        "Content/Content/font-awesome.min.css",
+        "Content/fonts/FontAwesome.otf",
+        "Content/fonts/fontawesome-webfont.eot",
+        "Content/fonts/fontawesome-webfont.svg",
+        "Content/fonts/fontawesome-webfont.ttf",
+        "Content/fonts/fontawesome-webfont.woff",
+        "Content/fonts/fontawesome-webfont.woff2",
+        "fontawesome.4.7.0.nupkg.sha512",
+        "fontawesome.nuspec",
+        "tools/install.ps1"
       ]
     },
     "Humanizer/2.14.1": {
@@ -11169,6 +11193,7 @@
     "net8.0": [
       "DotNetEnv >= 3.1.1",
       "FluentAssertions >= 8.1.1",
+      "FontAwesome >= 4.7.0",
       "Microsoft.EntityFrameworkCore >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.2",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
@@ -11183,11 +11208,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\study\\SIG\\project\\git\\ProjectSig\\armadieti2.csproj",
+      "projectUniqueName": "F:\\study\\SIG\\project\\ProjectSig\\armadieti2.csproj",
       "projectName": "armadieti2",
-      "projectPath": "F:\\study\\SIG\\project\\git\\ProjectSig\\armadieti2.csproj",
+      "projectPath": "F:\\study\\SIG\\project\\ProjectSig\\armadieti2.csproj",
       "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-      "outputPath": "F:\\study\\SIG\\project\\git\\ProjectSig\\obj\\",
+      "outputPath": "F:\\study\\SIG\\project\\ProjectSig\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -11234,6 +11259,10 @@
           "FluentAssertions": {
             "target": "Package",
             "version": "[8.1.1, )"
+          },
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

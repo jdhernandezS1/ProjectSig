@@ -22,7 +22,9 @@ namespace armadieti2.Controllers
         // GET: home
         public async Task<IActionResult> Index()
         {
-            return View();
+            var postgresContext = _context.Mobilios.Include(m => m.IdlocationNavigation).Include(m => m.NumerochiaveNavigation).Include(m => m.StatomobilioNavigation).Include(m => m.TipomobilioNavigation);
+
+            return View(await postgresContext.ToListAsync());
 
         }
 

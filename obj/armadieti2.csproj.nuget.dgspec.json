@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\study\\SIG\\project\\git\\ProjectSig\\armadieti2.csproj": {}
+    "F:\\study\\SIG\\project\\ProjectSig\\armadieti2.csproj": {}
   },
   "projects": {
-    "F:\\study\\SIG\\project\\git\\ProjectSig\\armadieti2.csproj": {
+    "F:\\study\\SIG\\project\\ProjectSig\\armadieti2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\study\\SIG\\project\\git\\ProjectSig\\armadieti2.csproj",
+        "projectUniqueName": "F:\\study\\SIG\\project\\ProjectSig\\armadieti2.csproj",
         "projectName": "armadieti2",
-        "projectPath": "F:\\study\\SIG\\project\\git\\ProjectSig\\armadieti2.csproj",
+        "projectPath": "F:\\study\\SIG\\project\\ProjectSig\\armadieti2.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "F:\\study\\SIG\\project\\git\\ProjectSig\\obj\\",
+        "outputPath": "F:\\study\\SIG\\project\\ProjectSig\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,6 +58,10 @@
             "FluentAssertions": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

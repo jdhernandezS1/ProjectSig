@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Xxqged7afpY=",
+  "dgSpecHash": "mxzkxUWe5U0=",
   "success": true,
-  "projectFilePath": "F:\\study\\SIG\\project\\git\\ProjectSig\\armadieti2.csproj",
+  "projectFilePath": "F:\\study\\SIG\\project\\ProjectSig\\armadieti2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julio\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\fluentassertions\\8.1.1\\fluentassertions.8.1.1.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
