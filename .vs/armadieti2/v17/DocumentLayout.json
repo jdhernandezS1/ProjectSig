@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\study\\SIG\\project\\ProjectSig\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\views\\noleggios\\scorta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\noleggios\\scorta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\controllers\\noleggioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:controllers\\noleggioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Scorta.cshtml",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Noleggios\\Scorta.cshtml",
+              "RelativeDocumentMoniker": "Views\\Noleggios\\Scorta.cshtml",
+              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Noleggios\\Scorta.cshtml",
+              "RelativeToolTip": "Views\\Noleggios\\Scorta.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T12:29:22.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T12:27:36.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NoleggiosController.cs",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\NoleggiosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NoleggiosController.cs",
+              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\NoleggiosController.cs",
+              "RelativeToolTip": "Controllers\\NoleggiosController.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAAANMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T12:27:34.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBsAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T12:14:29.888Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

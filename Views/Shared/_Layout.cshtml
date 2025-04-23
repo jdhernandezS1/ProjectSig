@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="~/font-awesome/css/all.css" asp-append-version="true" />    
 
 </head>
-<body >
+<body class="m-0 d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-black border-bottom box-shadow mb-3 text-white">
             <div class="container-fluid d-flex justify-content-center">
@@ -23,7 +23,7 @@
                 </button>
                 </div>
                 <div class="navbar-collapse collapse d-sm-inline-flex ">
-                    <ul class="navbar-nav flex-grow-1 d-flex justify-content-end">
+                    <ul class="navbar-nav flex-grow-1 d-flex justify-content-start">
                         <li class="nav-item"> 
                             <a class="nav-link text-white" asp-area="" asp-controller="noleggios" asp-action="Index">Noleggi</a>
                         </li>
@@ -36,16 +36,49 @@
         </nav>
     </header>
     <div class="container ">
-        <main role="main" class="pb-3 ">
+        <main role="main" class="pb-3 flex-grow-1 min-vh-100">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted bg-black text-white">
-        <div class="container ">
-            &copy; 2025 - armadieti2 - 
+    <footer class="mt-5 bg-dark text-light pt-4 pb-2 shadow-lg">
+        <div class="container">
+            <div class="row gy-4">
+                @* Descrizione *@
+                <div class="col-12 col-md-4">
+                    <h5 class="text-uppercase">Armadieti Manager</h5>
+                    <p class="small text-muted">Sistema intelligente per la gestione degli armadietti. Controllo rapido, gestione sicura, esperienza moderna.</p>
+                </div>
+
+
+                @* LINKS *@
+                <div class="col-6 col-md-4">
+                    <h6 class="text-uppercase">Navigazione</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-light text-decoration-none">🏠 Home</a></li>
+                        <li><a href="/Noleggios" class="text-light text-decoration-none">📋 Noleggi</a></li>
+                        <li><a href="/Mobilios" class="text-light text-decoration-none">🗄️ Mobilios</a></li>
+                        <li><a href="/Personas" class="text-light text-decoration-none">👤 Personas</a></li>
+                    </ul>
+                </div>
+                @* INFO CONTATTO *@
+                <div class="col-6 col-md-4">
+                    <h6 class="text-uppercase">Contatto</h6>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-envelope me-2"></i> supporto@armadieti.app</li>
+                        <li><i class="bi bi-telephone me-2"></i> +41 79 000 00 00</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> Bellinzona, Svizzera</li>
+                    </ul>
+                </div>
+            </div>
+
+            @* Copyright *@
+            <div class="text-center text-muted small mt-4 border-top pt-2">
+                &copy; @DateTime.Now.Year Armadieti Manager. Tutti i diritti riservati.
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -207,5 +207,32 @@ namespace armadieti2.Controllers
         {
             return _context.Noleggios.Any(e => e.Idnoleggio == id);
         }
+
+        // GET: home
+        public async Task<IActionResult> Scorta()
+        {
+            var mobilios = await _context.Mobilios
+                .Include(m => m.IdlocationNavigation)
+                .Include(m => m.NumerochiaveNavigation)
+                .Include(m => m.StatomobilioNavigation)
+                .Include(m => m.TipomobilioNavigation)
+                .ToListAsync();
+
+            var result = new List<MobilioConNoleggioView>();
+
+            foreach (var mobilio in mobilios)
+            {
+                var noleggioAttivo = await _context.Noleggios
+                    .FirstOrDefaultAsync(n => n.Idmobilio == mobilio.Idmobilio && n.StatoAttivo == StatoNoleggioEnum.Attivo);
+
+                result.Add(new MobilioConNoleggioView
+                {
+                    Mobilio = mobilio,
+                    NoleggioAttivoId = noleggioAttivo?.Idnoleggio
+                });
+            }
+
+            return View(result);
+        }
     }
 }
