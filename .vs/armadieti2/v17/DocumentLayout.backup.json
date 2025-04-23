@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "F:\\study\\SIG\\project\\ProjectSig\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\views\\noleggios\\scorta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\noleggios\\scorta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE7A555C-64D3-4F35-9FC5-AD672CEF4235}|armadieti2.csproj|f:\\study\\sig\\project\\projectsig\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,24 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T12:35:57.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Scorta.cshtml",
               "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Noleggios\\Scorta.cshtml",
               "RelativeDocumentMoniker": "Views\\Noleggios\\Scorta.cshtml",
-              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Noleggios\\Scorta.cshtml",
-              "RelativeToolTip": "Views\\Noleggios\\Scorta.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "ToolTip": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Noleggios\\Scorta.cshtml*",
+              "RelativeToolTip": "Views\\Noleggios\\Scorta.cshtml*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-23T12:29:22.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NoleggiosController.cs",
               "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Controllers\\NoleggiosController.cs",
               "RelativeDocumentMoniker": "Controllers\\NoleggiosController.cs",
@@ -69,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "F:\\study\\SIG\\project\\ProjectSig\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",

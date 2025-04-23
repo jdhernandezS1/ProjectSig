@@ -34,24 +34,33 @@
             {
                 var boxClass = GetBoxClass(item.Mobilio.StatomobilioNavigation.Statomobilio1);
 
-                <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
+                
                     @if (item.Mobilio.Statomobilio == 1) // available
                     {
-                        <a asp-action="Create" asp-controller="Noleggios" asp-route-id="@item.Mobilio.Idmobilio" class="text-white">
+                    <a asp-action="Create" asp-controller="Noleggios" asp-route-id="@item.Mobilio.Idmobilio" class=" text-decoration-none text-white">
+
+                        <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
                             <strong>@item.Mobilio.Numero</strong>
+                        </div>
                         </a>
                     }
                     else if (item.NoleggioAttivoId != null)
                     {
                         <a asp-action="Edit" asp-controller="Noleggios" asp-route-id="@item.NoleggioAttivoId" class="text-decoration-none text-white">
+                        <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
                             <i class="fa-solid fa-file-pen"></i> <strong>@item.Mobilio.Numero</strong>
+                        </div>
+
                         </a>
                     }
                     else
                     {
+                    <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
                         <div><strong>@item.Mobilio.Numero</strong></div>
+                    </div>
+
                     }
-                </div>
+                
             }
         </div>
     }
