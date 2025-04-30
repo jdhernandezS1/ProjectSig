@@ -1,52 +1,50 @@
-﻿@{
-    ViewData["Title"] = "Benvenuto";
+@{
+    ViewData["Title"] = "Gestione Armadietti Semplice ed Efficiente";
 }
-
 
 @* Banner *@
 <section class="bg-dark text-light text-center py-5">
     <div class="container">
-        <h1 class="display-4 fw-bold">Benvenuto in SIG Armadieti Manager</h1>
-        <p class="lead">Gestisci armadietti, prenotazioni e utenti con semplicita ed efficienza.</p>
-        <a asp-area="" asp-controller="noleggios" asp-action="Scorta" class="btn btn-primary btn-lg mt-3">Gestisci Noleggi</a>        
-
+        <h1 class="display-4 fw-bold">Gestione Armadietti Semplice ed Efficiente</h1>
+        <p class="lead">Ottimizza la gestione dei tuoi armadietti, semplifica le prenotazioni e tieni traccia degli utenti in un unico posto.</p>
+        <a asp-area="" asp-controller="noleggios" asp-action="Scorta" class="btn btn-primary btn-lg mt-3">Vai alla Gestione Noleggi</a>
     </div>
 </section>
 
-@* Funzioni *@
+@* Funzionalità Principali *@
 <section class="py-5 bg-light text-center">
     <div class="container">
-        <h2 class="mb-4">Cosa puoi fare</h2>
+        <h2 class="mb-4">Cosa puoi fare con SIG Armadieti Manager</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="p-4 border rounded bg-white shadow-sm h-100">
                     <i class="bi bi-box-seam fs-1 mb-3 text-primary"></i>
-                    <h5>Controllo Mobilio</h5>
-                    <p class="text-muted small">Visualizza la disponibilità di ogni armadio o casellario in tempo reale.</p>
+                    <h5>Visualizza la Disponibilità</h5>
+                    <p class="text-muted small">Controlla in tempo reale lo stato di ogni armadio o casellario.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-4 border rounded bg-white shadow-sm h-100">
                     <i class="bi bi-calendar-check fs-1 mb-3 text-success"></i>
-                    <h5>Prenotazioni Smart</h5>
-                    <p class="text-muted small">Crea, modifica o chiudi un noleggio con pochi clic e senza errori.</p>
+                    <h5>Gestisci le Prenotazioni Facilmente</h5>
+                    <p class="text-muted small">Crea, modifica e chiudi i noleggi con pochi semplici clic.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-4 border rounded bg-white shadow-sm h-100">
                     <i class="bi bi-people fs-1 mb-3 text-warning"></i>
-                    <h5>Gestione Mobili Chiavi Utenti</h5>
-                    <p class="text-muted small">Associa persone, dipartimenti e traccia lo storico dei movimenti.</p>
+                    <h5>Traccia Utenti e Armadietti</h5>
+                    <p class="text-muted small">Associa utenti, dipartimenti e visualizza lo storico delle attività.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-@* Altre cose d;aggiungere *@
+@* Inizia Ora *@
 <section class="py-5 bg-primary text-light text-center">
     <div class="container">
-        <h3 class="fw-bold">Inizia ora a semplificare la gestione del tuo mobilio!</h3>
-        <a href="/Mobilios" class="btn btn-outline-light mt-3">Visualizza gli Armadi</a>
+        <h3 class="fw-bold">Inizia subito a semplificare la gestione dei tuoi armadietti!</h3>
+        <a href="/Mobilios" class="btn btn-outline-light mt-3">Esplora gli Armadietti</a>
     </div>
 </section>
