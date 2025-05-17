@@ -1,69 +1,75 @@
 ﻿@model IEnumerable<armadieti2.Models.MobilioConNoleggioView>
+
 @{
     ViewData["Title"] = "Scorta";
 
-    // function to select colors of the cells
-    string GetBoxClass(string stato)
+    string stabile = ViewBag.Stabile as string ?? "Edificio";
+    int currentPage = ViewBag.CurrentPage;
+
+    string GetBoxClass(string stato) => stato switch
     {
-        return stato switch
-        {
-            "Disponibile" => "bg-success text-white",
-            "In uso" => "bg-warning text-dark",
-            "In manutenzione" => "bg-danger text-white",
-            _ => "bg-secondary text-white"
-        };
-    }
+        "Disponibile" => "bg-success text-white",
+        "In uso" => "bg-warning text-dark",
+        "In manutenzione" => "bg-danger text-white",
+        _ => "bg-secondary text-white"
+    };
 }
 
-<h1>Armadietti per Stabile</h1>
+<h1 class="mb-4">Armadietti – @stabile</h1>
 
+<!-- Leyenda -->
 <p>
-    <span class="text-success ">DISPONIBILE</span> <span class="bg-success">  </span> |
-    <span class="text-warning "> NON DISPONIBILE</span> <span class="bg-warning">  </span> |
-    <span class="text-danger "> IN MANUTENZIONE</span> <span class="bg-danger">  </span>
-    
+    <span class="text-success">DISPONIBILE</span> <span class="bg-success px-3 py-1 rounded d-inline-block"></span> |
+    <span class="text-warning">IN USO</span> <span class="bg-warning px-3 py-1 rounded d-inline-block"></span> |
+    <span class="text-danger">IN MANUTENZIONE</span> <span class="bg-danger px-3 py-1 rounded d-inline-block"></span>
 </p>
 
-@foreach (var stabileGroup in Model.GroupBy(m => m.Mobilio.IdlocationNavigation.Stabile))
+<!-- Armadios agrupados por piano -->
+@foreach (var pianoGroup in Model.GroupBy(m => m.Mobilio.IdlocationNavigation.Piano))
 {
-    <h3 class="mt-4">@stabileGroup.Key</h3>
+    <h5 class="mt-4">Piano: @pianoGroup.Key</h5>
+    <div class="d-flex flex-wrap gap-2">
+        @foreach (var item in pianoGroup)
+        {
+            var boxClass = GetBoxClass(item.Mobilio.StatomobilioNavigation.Statomobilio1);
 
-    @foreach (var pianoGroup in stabileGroup.GroupBy(m => m.Mobilio.IdlocationNavigation.Piano))
-    {
-        <h5 class="mt-3">Piano: @pianoGroup.Key</h5>
-        <div class="d-flex flex-wrap gap-2">
-            @foreach (var item in pianoGroup)
+            if (item.Mobilio.Statomobilio == 1) // disponibile
             {
-                var boxClass = GetBoxClass(item.Mobilio.StatomobilioNavigation.Statomobilio1);
-
-                
-                    @if (item.Mobilio.Statomobilio == 1) // available
-                    {
-                    <a asp-action="Create" asp-controller="Noleggios" asp-route-id="@item.Mobilio.Idmobilio" class=" text-decoration-none text-white">
-
-                        <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
-                            <strong>@item.Mobilio.Numero</strong>
-                        </div>
-                        </a>
-                    }
-                    else if (item.NoleggioAttivoId != null)
-                    {
-                        <a asp-action="Edit" asp-controller="Noleggios" asp-route-id="@item.NoleggioAttivoId" class="text-decoration-none text-white">
-                        <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
-                            <i class="fa-solid fa-file-pen"></i> <strong>@item.Mobilio.Numero</strong>
-                        </div>
-
-                        </a>
-                    }
-                    else
-                    {
+                <a asp-action="Create" asp-controller="Noleggios" asp-route-id="@item.Mobilio.Idmobilio" class="text-decoration-none text-white">
                     <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
-                        <div><strong>@item.Mobilio.Numero</strong></div>
+                        <strong>@item.Mobilio.Numero</strong>
                     </div>
-
-                    }
-                
+                </a>
             }
-        </div>
-    }
+            else if (item.NoleggioAttivoId != null)
+            {
+                <a asp-action="Edit" asp-controller="Noleggios" asp-route-id="@item.NoleggioAttivoId" class="text-decoration-none text-white">
+                    <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
+                        <i class="bi bi-pencil-fill"></i> <strong>@item.Mobilio.Numero</strong>
+                    </div>
+                </a>
+            }
+            else
+            {
+                <div class="p-3 border rounded text-center @boxClass" style="width: 80px;">
+                    <strong>@item.Mobilio.Numero</strong>
+                </div>
+            }
+        }
+    </div>
 }
+
+<!-- Paginazione basata su nomi degli edifici -->
+<nav class="mt-5">
+    <ul class="pagination justify-content-center">
+        @foreach (var edificio in (IEnumerable<dynamic>)ViewBag.Edifici)
+        {
+            bool isActive = (int)edificio.Page == ViewBag.CurrentPage;
+            <li class="page-item @(isActive ? "active" : "")">
+                <a class="page-link" asp-action="Scorta" asp-route-page="@edificio.Page">
+                    @edificio.Nome
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

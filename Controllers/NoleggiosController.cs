@@ -208,8 +208,8 @@ namespace armadieti2.Controllers
             return _context.Noleggios.Any(e => e.Idnoleggio == id);
         }
 
-        // GET: home
-        public async Task<IActionResult> Scorta()
+        // GET: Scorta
+        public async Task<IActionResult> Scorta(int page = 1)
         {
             var mobilios = await _context.Mobilios
                 .Include(m => m.IdlocationNavigation)
@@ -218,21 +218,36 @@ namespace armadieti2.Controllers
                 .Include(m => m.TipomobilioNavigation)
                 .ToListAsync();
 
-            var result = new List<MobilioConNoleggioView>();
+            var mobilioConNoleggioList = new List<MobilioConNoleggioView>();
 
-            foreach (var mobilio in mobilios)
+            foreach (var m in mobilios)
             {
                 var noleggioAttivo = await _context.Noleggios
-                    .FirstOrDefaultAsync(n => n.Idmobilio == mobilio.Idmobilio && n.StatoAttivo == StatoNoleggioEnum.Attivo);
+                    .FirstOrDefaultAsync(n => n.Idmobilio == m.Idmobilio && n.StatoAttivo == StatoNoleggioEnum.Attivo);
 
-                result.Add(new MobilioConNoleggioView
+                mobilioConNoleggioList.Add(new MobilioConNoleggioView
                 {
-                    Mobilio = mobilio,
+                    Mobilio = m,
                     NoleggioAttivoId = noleggioAttivo?.Idnoleggio
                 });
             }
 
-            return View(result);
+            var edifici = mobilioConNoleggioList
+                .GroupBy(m => m.Mobilio.IdlocationNavigation.Stabile)
+                .OrderBy(g => g.Key)
+                .ToList();
+
+            int totalEdifici = edifici.Count;
+            var edificioCorrente = edifici.ElementAtOrDefault(page - 1);
+            if (edificioCorrente == null)
+                return NotFound();
+
+            // 👇 Pasamos todos los nomi degli edifici
+            ViewBag.Edifici = edifici.Select((g, index) => new { Nome = g.Key, Page = index + 1 }).ToList();
+            ViewBag.CurrentPage = page;
+            ViewBag.Stabile = edificioCorrente.Key;
+
+            return View(edificioCorrente.ToList());
         }
     }
 }

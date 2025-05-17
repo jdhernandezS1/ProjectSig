@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.bg-primary{
+  background-color: #1ab394 !important;
+}
