@@ -24,3 +24,11 @@ body {
 .bg-primary{
   background-color: #1ab394 !important;
 }
+
+.text-green{
+  color:#1ab394;
+}
+
+.bg-gray{
+  background-color: #000000;
+}
