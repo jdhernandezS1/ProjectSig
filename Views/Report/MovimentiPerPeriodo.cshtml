@@ -54,4 +54,14 @@
     <div class="mt-3 alert alert-success">
         <strong>Totale periodo:</strong> CHF @totale.ToString("0.00")
     </div>
+
+
+    <form asp-action="ExportExcel" method="post" class="mt-3">
+        <input type="hidden" name="dataInizio" value="@ViewBag.DataInizio" />
+        <input type="hidden" name="dataFine" value="@ViewBag.DataFine" />
+        <button type="submit" class="btn btn-success">
+            📥 Scarica in Excel
+        </button>
+    </form>
+
 }
