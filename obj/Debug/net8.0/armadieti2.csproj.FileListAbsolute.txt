@@ -1072,3 +1072,11 @@ F:/study/SIG/project/git/ProjectSig/obj/Debug/net8.0/scopedcss/Views/Shared/_Lay
 F:/study/SIG/project/git/ProjectSig/obj/Debug/net8.0/scopedcss/projectbundle/armadieti2.bundle.scp.css
 F:/study/SIG/project/ProjectSig/bin/Debug/net8.0/libman.json
 /workspaces/ProjectSig/bin/Debug/net8.0/libman.json
+/workspaces/ProjectSig/bin/Debug/net8.0/ClosedXML.dll
+/workspaces/ProjectSig/bin/Debug/net8.0/ClosedXML.Parser.dll
+/workspaces/ProjectSig/bin/Debug/net8.0/DocumentFormat.OpenXml.dll
+/workspaces/ProjectSig/bin/Debug/net8.0/DocumentFormat.OpenXml.Framework.dll
+/workspaces/ProjectSig/bin/Debug/net8.0/ExcelNumberFormat.dll
+/workspaces/ProjectSig/bin/Debug/net8.0/RBush.dll
+/workspaces/ProjectSig/bin/Debug/net8.0/SixLabors.Fonts.dll
+/workspaces/ProjectSig/bin/Debug/net8.0/System.IO.Packaging.dll
