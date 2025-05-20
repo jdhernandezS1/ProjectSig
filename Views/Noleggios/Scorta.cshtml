@@ -17,14 +17,14 @@
 
 <h1 class="mb-4">Armadietti – @stabile</h1>
 
-<!-- Leyenda -->
+<!-- Legend -->
 <p>
     <span class="text-success">DISPONIBILE</span> <span class="bg-success px-3 py-1 rounded d-inline-block"></span> |
     <span class="text-warning">IN USO</span> <span class="bg-warning px-3 py-1 rounded d-inline-block"></span> |
     <span class="text-danger">IN MANUTENZIONE</span> <span class="bg-danger px-3 py-1 rounded d-inline-block"></span>
 </p>
 
-<!-- Armadios agrupados por piano -->
+<!-- storate by floor -->
 @foreach (var pianoGroup in Model.GroupBy(m => m.Mobilio.IdlocationNavigation.Piano))
 {
     <h5 class="mt-4">Piano: @pianoGroup.Key</h5>
@@ -59,14 +59,14 @@
     </div>
 }
 
-<!-- Paginazione basata su nomi degli edifici -->
+<!-- PAGINATE  -->
 <nav class="mt-5">
     <ul class="pagination justify-content-center">
         @foreach (var edificio in (IEnumerable<dynamic>)ViewBag.Edifici)
         {
             bool isActive = (int)edificio.Page == ViewBag.CurrentPage;
-            <li class="page-item @(isActive ? "active" : "")">
-                <a class="page-link" asp-action="Scorta" asp-route-page="@edificio.Page">
+            <li class="page-item @(isActive ? "active " : "")">
+                <a class="page-link " asp-action="Scorta" asp-route-page="@edificio.Page">
                     @edificio.Nome
                 </a>
             </li>
