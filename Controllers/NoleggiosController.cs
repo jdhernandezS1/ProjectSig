@@ -211,6 +211,7 @@ namespace armadieti2.Controllers
         // GET: Scorta
         public async Task<IActionResult> Scorta(int page = 1)
         {
+            // 1. Obtener todos los mobilios necesarios
             var mobilios = await _context.Mobilios
                 .Include(m => m.IdlocationNavigation)
                 .Include(m => m.NumerochiaveNavigation)
@@ -218,20 +219,19 @@ namespace armadieti2.Controllers
                 .Include(m => m.TipomobilioNavigation)
                 .ToListAsync();
 
-            var mobilioConNoleggioList = new List<MobilioConNoleggioView>();
+            // 2. Obtener todos los noleggi attivi en una sola query
+            var noleggiAttivi = await _context.Noleggios
+                .Where(n => n.StatoAttivo == StatoNoleggioEnum.Attivo)
+                .ToDictionaryAsync(n => n.Idmobilio, n => n.Idnoleggio);
 
-            foreach (var m in mobilios)
+            // 3. Asociar mobilios con su eventual noleggio attivo (en memoria, rápido)
+            var mobilioConNoleggioList = mobilios.Select(m => new MobilioConNoleggioView
             {
-                var noleggioAttivo = await _context.Noleggios
-                    .FirstOrDefaultAsync(n => n.Idmobilio == m.Idmobilio && n.StatoAttivo == StatoNoleggioEnum.Attivo);
+                Mobilio = m,
+                NoleggioAttivoId = noleggiAttivi.TryGetValue(m.Idmobilio, out var idnoleggio) ? idnoleggio : null
+            }).ToList();
 
-                mobilioConNoleggioList.Add(new MobilioConNoleggioView
-                {
-                    Mobilio = m,
-                    NoleggioAttivoId = noleggioAttivo?.Idnoleggio
-                });
-            }
-
+            // 4. Agrupar por edificio
             var edifici = mobilioConNoleggioList
                 .GroupBy(m => m.Mobilio.IdlocationNavigation.Stabile)
                 .OrderBy(g => g.Key)
@@ -242,12 +242,12 @@ namespace armadieti2.Controllers
             if (edificioCorrente == null)
                 return NotFound();
 
-            // 👇 Pasamos todos los nomi degli edifici
             ViewBag.Edifici = edifici.Select((g, index) => new { Nome = g.Key, Page = index + 1 }).ToList();
             ViewBag.CurrentPage = page;
             ViewBag.Stabile = edificioCorrente.Key;
 
             return View(edificioCorrente.ToList());
         }
+
     }
 }
