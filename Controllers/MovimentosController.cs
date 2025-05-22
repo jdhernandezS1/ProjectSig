@@ -43,7 +43,7 @@ namespace armadieti2.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.Idnoleggio = id;
             return View(movimentos);
         }
 
@@ -68,9 +68,17 @@ namespace armadieti2.Controllers
         }
 
         // GET: Movimentos/Create
-        public IActionResult Create()
+        public IActionResult Create(int? id)
         {
-            ViewData["Idnoleggio"] = new SelectList(_context.Noleggios, "Idnoleggio", "Idnoleggio");
+            if (id.HasValue)
+            {
+                ViewData["Idnoleggio"] = new SelectList(_context.Noleggios, "Idnoleggio", "Idnoleggio", id.Value);
+            }
+            else
+            {
+                ViewData["Idnoleggio"] = new SelectList(_context.Noleggios, "Idnoleggio", "Idnoleggio");
+            }
+
             ViewData["Pagamento"] = new SelectList(_context.Tipopagamentos, "Id", "Pagamento");
             return View();
         }
