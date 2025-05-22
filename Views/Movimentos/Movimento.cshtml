@@ -2,12 +2,13 @@
 
 @{
     ViewData["Title"] = "Movimento";
+    var idNoleggio = ViewBag.Idnoleggio;
 }
 
 <h1>Movimentos</h1>
 
 <p>
-    <a asp-action="Create">Aggiungere movimento</a>
+    <a asp-action="Create" asp-route-id="@idNoleggio" class="btn btn-primary">Aggiungere movimento</a>
 </p>
 <table class="table">
     <thead>
