@@ -211,7 +211,7 @@ namespace armadieti2.Controllers
         // GET: Scorta
         public async Task<IActionResult> Scorta(int page = 1)
         {
-            // 1. Obtener todos los mobilios necesarios
+            // Query tutti mobili
             var mobilios = await _context.Mobilios
                 .Include(m => m.IdlocationNavigation)
                 .Include(m => m.NumerochiaveNavigation)
@@ -219,19 +219,19 @@ namespace armadieti2.Controllers
                 .Include(m => m.TipomobilioNavigation)
                 .ToListAsync();
 
-            // 2. Obtener todos los noleggi attivi en una sola query
+            // Query noleggi attivi
             var noleggiAttivi = await _context.Noleggios
                 .Where(n => n.StatoAttivo == StatoNoleggioEnum.Attivo)
                 .ToDictionaryAsync(n => n.Idmobilio, n => n.Idnoleggio);
 
-            // 3. Asociar mobilios con su eventual noleggio attivo (en memoria, rápido)
+            // Asocia mobili con il noleggio corrispondete
             var mobilioConNoleggioList = mobilios.Select(m => new MobilioConNoleggioView
             {
                 Mobilio = m,
                 NoleggioAttivoId = noleggiAttivi.TryGetValue(m.Idmobilio, out var idnoleggio) ? idnoleggio : null
             }).ToList();
 
-            // 4. Agrupar por edificio
+            // Riaggrupa mobili
             var edifici = mobilioConNoleggioList
                 .GroupBy(m => m.Mobilio.IdlocationNavigation.Stabile)
                 .OrderBy(g => g.Key)

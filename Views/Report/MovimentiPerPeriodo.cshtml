@@ -5,23 +5,26 @@
     var totale = ViewBag.Totale ?? 0;
     var dataInizio = ViewBag.DataInizio ?? "";
     var dataFine = ViewBag.DataFine ?? "";
+    var annoCorrente = DateTime.Now.Year;
+    var dataInizioDefault = new DateTime(annoCorrente, 1, 1).ToString("yyyy-MM-dd");
+    var dataFineDefault = new DateTime(annoCorrente, 12, 31).ToString("yyyy-MM-dd");
 }
 
 <h2 class="mb-4">Contabilità per intervallo di date</h2>
-
 <form method="post" asp-action="MovimentiPerPeriodo" class="row g-3 mb-4">
     <div class="col-md-5">
         <label for="dataInizio">Data inizio</label>
-        <input type="date" name="dataInizio" class="form-control" required />
+        <input type="date" name="dataInizio" class="form-control" required value="@dataInizioDefault" />
     </div>
     <div class="col-md-5">
         <label for="dataFine">Data fine</label>
-        <input type="date" name="dataFine" class="form-control" required />
+        <input type="date" name="dataFine" class="form-control" required value="@dataFineDefault" />
     </div>
     <div class="col-md-2 align-self-end">
-        <button type="submit" class="btn bg-primary text-white w-100">Visualizza</button>
+        <button type="submit" class="btn bg-primary text-white w-100"> <i class="fa-solid fa-eye"></i> Visualizza</button>
     </div>
 </form>
+
 
 @if (Model != null && Model.Any())
 {
@@ -60,7 +63,7 @@
         <input type="hidden" name="dataInizio" value="@ViewBag.DataInizio" />
         <input type="hidden" name="dataFine" value="@ViewBag.DataFine" />
         <button type="submit" class="btn bg-primary text-white">
-            📥 Scarica in Excel
+             <i class="fa-solid fa-cloud-arrow-down"></i> Scarica in Excel
         </button>
     </form>
 
