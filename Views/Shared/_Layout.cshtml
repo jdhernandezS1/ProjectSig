@@ -13,83 +13,94 @@
 
 <body class="m-0 d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4 fixed-top">
             <div class="container-fluid">
-                <!-- Logo o nombre -->
+                @* Logo o nombre  *@
                 <a class="navbar-brand text-danger fw-bold" asp-controller="Home" asp-action="Index">SIG</a>
 
-                <!-- Botón de colapso para móviles -->
+                @* Botón de colapso para móviles *@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                     aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Contenido del menú -->
+                @* Contenido del menú *@
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"></li>
-                        <a class="nav-link text-white" asp-controller="Report"
-                            asp-action="MovimentiPerPeriodo">Contabilità</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link text-white" asp-controller="Noleggios" asp-action="Scorta"> Gestione</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Report"
+                                asp-action="MovimentiPerPeriodo">Contabilità</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-controller="Noleggios" asp-action="Index"> Noleggi</a>
+                            <a class="nav-link text-white" asp-controller="Noleggios" asp-action="Scorta">Gestione</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-controller="Mobilios" asp-action="Index"> Scorta</a>
+                            <a class="nav-link text-white" asp-controller="Noleggios" asp-action="Index">Noleggi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Mobilios" asp-action="Index">Scorta</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container ">
         <main role="main" class="pb-3 flex-grow-1 min-vh-100">
             @RenderBody()
         </main>
     </div>
-    <footer class="mt-5 bg-gray text-light pt-4 pb-2 shadow-lg">
-        <div class="container">
-            <div class="row gy-4 text-center">
-                @* Descrizione *@
-                <div class="col-12 col-md-4">
-                    <h5 class="text-uppercase">Armadieti Manager</h5>
-                    <p class="small text-muted">Sistema intelligente per la gestione degli armadietti. Controllo rapido,
-                        gestione sicura, esperienza moderna.</p>
-                </div>
-                @* LINKS *@
-                <div class="col-6 col-md-4">
-                    <h6 class="text-uppercase">Navigazione</h6>
-                    <ul class="list-unstyled text-center">
-                        <li><a href="/" class="text-light text-decoration-none"><i
-                                    class="fa-solid fa-house text-green"></i>  Home</a></li>
-                        <li><a href="/Noleggios" class="text-light text-decoration-none"><i
-                                    class="fa-solid fa-table-list text-green"></i>  Noleggi</a></li>
-                        <li><a href="/Mobilios" class="text-light text-decoration-none"><i
-                                    class="fa-solid fa-warehouse text-green"></i>  Mobilios</a></li>
-                        <li><a href="/Personas" class="text-light text-decoration-none"><i
-                                    class="fa-solid fa-users text-green"></i>  Personas</a></li>
-                    </ul>
-                </div>
-                @* INFO CONTATTO *@
-                <div class="col-6 col-md-4">
-                    <h6 class="text-uppercase">  Contatto</h6>
-                    <ul class="list-unstyled small text-center">
-                        <li><i class="fa-solid fa-envelope text-green"></i> supporto@edu.ti.ch</li>
-                        <li><i class="fa-solid fa-phone text-green"></i></i> +41 79 000 00 00</li>
-                        <li><i class="fa-solid fa-location-dot text-green"></i> Bellinzona, Svizzera</li>
-                    </ul>
-                </div>
-            </div>
+    <footer id="site-footer" class="position-fixed bottom-0 start-0 end-0 bg-dark text-light shadow-lg">
+        @* Flecha visible permanentemente *@
+        <div id="footer-toggle" class="text-center py-2 border-top border-secondary" style="cursor: pointer;">
+            <i class="fa-solid fa-chevron-up text-light"></i>
+        </div>
 
-            @* Copyright *@
-            <div class="text-center text-muted small mt-4 border-top pt-2">
-                &copy; @DateTime.Now.Year Armadieti Manager. Tutti i diritti riservati.
+        @* Contenuto del footer nascosto fino al click *@
+        <div id="footer-content" style="display: none;" class="bg-gray pt-4 pb-2">
+            <div class="container">
+                <div class="row gy-4 text-center">
+                    @* Descrizione *@
+                    <div class="col-12 col-md-4">
+                        <h5 class="text-uppercase">Armadieti Manager</h5>
+                        <p class="small text-muted">Sistema intelligente per la gestione degli armadietti. Controllo
+                            rapido,
+                            gestione sicura, esperienza moderna.</p>
+                    </div>
+                    @* Navigazione *@
+                    <div class="col-6 col-md-4">
+                        <h6 class="text-uppercase">Navigazione</h6>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="/" class="text-light text-decoration-none">
+                                    <i class="fa-solid fa-house text-green"></i> Home</a></li>
+                            <li><a href="/Noleggios" class="text-light text-decoration-none">
+                                    <i class="fa-solid fa-table-list text-green"></i> Noleggi</a></li>
+                            <li><a href="/Mobilios" class="text-light text-decoration-none">
+                                    <i class="fa-solid fa-warehouse text-green"></i> Mobilios</a></li>
+                            <li><a href="/Personas" class="text-light text-decoration-none">
+                                    <i class="fa-solid fa-users text-green"></i> Personas</a></li>
+                        </ul>
+                    </div>
+                    @* Contatto *@
+                    <div class="col-6 col-md-4">
+                        <h6 class="text-uppercase">Contatto</h6>
+                        <ul class="list-unstyled small text-center">
+                            <li><i class="fa-solid fa-envelope text-green"></i> supporto@edu.ti.ch</li>
+                            <li><i class="fa-solid fa-phone text-green"></i> +41 79 000 00 00</li>
+                            <li><i class="fa-solid fa-location-dot text-green"></i> Bellinzona, Svizzera</li>
+                        </ul>
+                    </div>
+                </div>
+
+                @* Copyright  *@
+                <div class="text-center text-muted small mt-4 border-top pt-2">
+                    &copy; @DateTime.Now.Year Armadieti Manager. Tutti i diritti riservati.
+                </div>
             </div>
         </div>
     </footer>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
