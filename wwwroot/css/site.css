@@ -8,7 +8,11 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -19,24 +23,29 @@ html {
 
 body {
   margin-bottom: 60px;
+  padding-top: 70px;
 }
 
-.bg-primary{
+.bg-primary {
   background-color: #1ab394 !important;
 }
 
-.text-green{
-  color:#1ab394;
+.text-green {
+  color: #1ab394;
 }
 
-.bg-gray{
+.bg-gray {
   background-color: #000000;
 }
 
 .page-item.active {
-    background-color:#1ab394 !important;
-    color: white !important;
+  background-color: #1ab394 !important;
+  color: white !important;
 }
-.page-link{
+
+.page-link {
   color: black;
+}
+#footer-content {
+    transition: all 0.4s ease-in-out;
 }

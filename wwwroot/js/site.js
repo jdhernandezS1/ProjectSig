@@ -1,4 +1,10 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿ const footerToggle = document.getElementById('footer-toggle');
+    const footerContent = document.getElementById('footer-content');
+    const icon = footerToggle.querySelector('i');
 
-// Write your JavaScript code.
+    footerToggle.addEventListener('click', function () {
+        const isOpen = footerContent.style.display === 'block';
+        footerContent.style.display = isOpen ? 'none' : 'block';
+        icon.classList.toggle('fa-chevron-up', !isOpen);
+        icon.classList.toggle('fa-chevron-down', isOpen);
+    });
